@@ -253,4 +253,6 @@ event/CMakeFiles/EventForSyn.dir/EventForSyn.cu.o : /home/yuanxinyu/CUDA_project
     /usr/include/c++/11/bits/ostream.tcc \
     /usr/include/c++/11/istream \
     /usr/include/c++/11/bits/istream.tcc \
-    /home/yuanxinyu/CUDA_project/CUDA_API/head_tool/KernelForTest.cuh
+    /home/yuanxinyu/CUDA_project/CUDA_API/head_tool/KernelForTest.cuh \
+    /home/yuanxinyu/CUDA_project/CUDA_API/head_tool/error_handling.h \
+    /usr/local/cuda-12.2/include/cuda.h

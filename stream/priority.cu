@@ -24,10 +24,10 @@ int main() {
 
     // 创建四个流,两个最高，两个最低
     cudaStream_t streams[4];
-    RUNTIME_CHECK(cudaStreamCreateWithPriority(&streams[0], cudaStreamDefault, greatestPriority));
-    RUNTIME_CHECK(cudaStreamCreateWithPriority(&streams[3], cudaStreamDefault, greatestPriority));
-    RUNTIME_CHECK(cudaStreamCreateWithPriority(&streams[1], cudaStreamDefault, leastPriority));
-    RUNTIME_CHECK(cudaStreamCreateWithPriority(&streams[2], cudaStreamDefault, leastPriority));
+    RUNTIME_CHECK(cudaStreamCreateWithPriority(&streams[0], cudaStreamNonBlocking, greatestPriority));
+    RUNTIME_CHECK(cudaStreamCreateWithPriority(&streams[3], cudaStreamNonBlocking, greatestPriority));
+    RUNTIME_CHECK(cudaStreamCreateWithPriority(&streams[1], cudaStreamNonBlocking, leastPriority));
+    RUNTIME_CHECK(cudaStreamCreateWithPriority(&streams[2], cudaStreamNonBlocking, leastPriority));
     std::cout << "优先级排序：0 = 3 > 1 = 2" << std::endl; 
 
     // 准备指针与任务配置

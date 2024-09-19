@@ -13,7 +13,7 @@ int main() {
     // 创建多个流
     std::vector<cudaStream_t> stream_list(NUM_STREAMS);
     for(int i = 0; i < NUM_STREAMS; i++) {
-        RUNTIME_CHECK(cudaStreamCreate(&stream_list[i]));
+        RUNTIME_CHECK(cudaStreamCreateWithFlags(&stream_list[i], cudaStreamNonBlocking));
     }
 
     // 创建一块主机的页锁定内存，并把所有的数据写为 666
