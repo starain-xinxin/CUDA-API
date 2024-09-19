@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/yuanxinyu/CUDA_project/CUDA_API/head_tool/KernelForTest.cu" "head_tool/CMakeFiles/KernelForTest.dir/KernelForTest.cu.o" "gcc" "head_tool/CMakeFiles/KernelForTest.dir/KernelForTest.cu.o.d"
+  "/home/yuanxinyu/CUDA_project/CUDA_API/stream/stream_intro.cu" "stream/CMakeFiles/stream_intro.dir/stream_intro.cu.o" "gcc" "stream/CMakeFiles/stream_intro.dir/stream_intro.cu.o.d"
   )
 
 # Targets to which this target links.

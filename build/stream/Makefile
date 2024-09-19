@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles /home/yuanxinyu/CUDA_project/CUDA_API/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles /home/yuanxinyu/CUDA_project/CUDA_API/build/stream//CMakeFiles/progress.marks
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stream/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stream/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,70 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stream/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stream/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named mat_mul
+# Convenience name for target.
+stream/CMakeFiles/stream_intro.dir/rule:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stream/CMakeFiles/stream_intro.dir/rule
+.PHONY : stream/CMakeFiles/stream_intro.dir/rule
 
-# Build rule for target.
-mat_mul: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mat_mul
-.PHONY : mat_mul
-
-# fast build rule for target.
-mat_mul/fast:
-	$(MAKE) $(MAKESILENT) -f memory/CMakeFiles/mat_mul.dir/build.make memory/CMakeFiles/mat_mul.dir/build
-.PHONY : mat_mul/fast
-
-#=============================================================================
-# Target rules for targets named vm_tensor
-
-# Build rule for target.
-vm_tensor: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vm_tensor
-.PHONY : vm_tensor
-
-# fast build rule for target.
-vm_tensor/fast:
-	$(MAKE) $(MAKESILENT) -f memory/CMakeFiles/vm_tensor.dir/build.make memory/CMakeFiles/vm_tensor.dir/build
-.PHONY : vm_tensor/fast
-
-#=============================================================================
-# Target rules for targets named EventForTime
-
-# Build rule for target.
-EventForTime: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 EventForTime
-.PHONY : EventForTime
-
-# fast build rule for target.
-EventForTime/fast:
-	$(MAKE) $(MAKESILENT) -f event/CMakeFiles/EventForTime.dir/build.make event/CMakeFiles/EventForTime.dir/build
-.PHONY : EventForTime/fast
-
-#=============================================================================
-# Target rules for targets named stream_intro
-
-# Build rule for target.
-stream_intro: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stream_intro
+# Convenience name for target.
+stream_intro: stream/CMakeFiles/stream_intro.dir/rule
 .PHONY : stream_intro
 
 # fast build rule for target.
 stream_intro/fast:
-	$(MAKE) $(MAKESILENT) -f stream/CMakeFiles/stream_intro.dir/build.make stream/CMakeFiles/stream_intro.dir/build
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f stream/CMakeFiles/stream_intro.dir/build.make stream/CMakeFiles/stream_intro.dir/build
 .PHONY : stream_intro/fast
+
+stream_intro.o: stream_intro.cu.o
+.PHONY : stream_intro.o
+
+# target to build an object file
+stream_intro.cu.o:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f stream/CMakeFiles/stream_intro.dir/build.make stream/CMakeFiles/stream_intro.dir/stream_intro.cu.o
+.PHONY : stream_intro.cu.o
+
+stream_intro.i: stream_intro.cu.i
+.PHONY : stream_intro.i
+
+# target to preprocess a source file
+stream_intro.cu.i:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f stream/CMakeFiles/stream_intro.dir/build.make stream/CMakeFiles/stream_intro.dir/stream_intro.cu.i
+.PHONY : stream_intro.cu.i
+
+stream_intro.s: stream_intro.cu.s
+.PHONY : stream_intro.s
+
+# target to generate assembly for a file
+stream_intro.cu.s:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f stream/CMakeFiles/stream_intro.dir/build.make stream/CMakeFiles/stream_intro.dir/stream_intro.cu.s
+.PHONY : stream_intro.cu.s
 
 # Help Target
 help:
@@ -176,10 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... EventForTime"
-	@echo "... mat_mul"
 	@echo "... stream_intro"
-	@echo "... vm_tensor"
+	@echo "... stream_intro.o"
+	@echo "... stream_intro.i"
+	@echo "... stream_intro.s"
 .PHONY : help
 
 
@@ -191,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

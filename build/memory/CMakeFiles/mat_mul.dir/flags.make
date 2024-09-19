@@ -4,7 +4,7 @@
 # compile CUDA with /usr/local/cuda-12.2/bin/nvcc
 CUDA_DEFINES = 
 
-CUDA_INCLUDES = -I/home/yuanxinyu/CUDA_project/CUDA_API/head_tool -I/home/yuanxinyu/CUDA_project/CUDA_API/head_tool/CUDA_API_INCLUDE_LIST -isystem=/usr/local/cuda-12.2/include
+CUDA_INCLUDES = -I/home/yuanxinyu/CUDA_project/CUDA_API/head_tool -I/home/yuanxinyu/CUDA_project/CUDA_API/memory -isystem=/usr/local/cuda-12.2/include
 
 CUDA_FLAGS =  --generate-code=arch=compute_75,code=[compute_75,sm_75] -std=c++11
 

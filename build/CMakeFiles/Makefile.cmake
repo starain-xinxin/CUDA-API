@@ -15,6 +15,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../event/CMakeLists.txt"
   "../head_tool/CMakeLists.txt"
   "../memory/CMakeLists.txt"
+  "../stream/CMakeLists.txt"
   "/usr/share/cmake-3.22/Modules/CMakeCCompiler.cmake.in"
   "/usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c"
   "/usr/share/cmake-3.22/Modules/CMakeCInformation.cmake"
@@ -138,12 +139,13 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "head_tool/CMakeFiles/CMakeDirectoryInformation.cmake"
   "memory/CMakeFiles/CMakeDirectoryInformation.cmake"
   "event/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "stream/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "head_tool/CMakeFiles/KernelForTest.dir/DependInfo.cmake"
   "memory/CMakeFiles/mat_mul.dir/DependInfo.cmake"
   "memory/CMakeFiles/vm_tensor.dir/DependInfo.cmake"
   "event/CMakeFiles/EventForTime.dir/DependInfo.cmake"
+  "stream/CMakeFiles/stream_intro.dir/DependInfo.cmake"
   )

@@ -26,8 +26,16 @@ list(APPEND CUDA_API_LINK_LIST "CUDA::cuda_driver") # 驱动库
 list(APPEND CUDA_API_INCLUDE_LIST "${CUDAToolkit_INCLUDE_DIRS}")   # CUDAToolkit头文件路径
 
 # ----------------- 管理子目录 ------------------ #
-list(APPEND CUDA_API_INCLUDE_LIST "${CMAKE_SOURCE_DIR}/head_tool")      # 将 ./head_tool 目录加入头文件路径
-add_subdirectory(head_tool)
-add_subdirectory(memory)
-add_subdirectory(event)
+set(SUBDIR_LIST 
+    head_tool
+    memory
+    event
+    stream
+)
+foreach(subdir ${SUBDIR_LIST})         # 包含所有子目录
+    list(APPEND CUDA_API_INCLUDE_LIST "${CMAKE_SOURCE_DIR}/${subdir}")   
+    add_subdirectory(${subdir})
+endforeach()
+
+
 

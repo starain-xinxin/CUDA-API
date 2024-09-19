@@ -116,44 +116,6 @@ depend:
 	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-head_tool/CMakeFiles/KernelForTest.dir/rule:
-	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 head_tool/CMakeFiles/KernelForTest.dir/rule
-.PHONY : head_tool/CMakeFiles/KernelForTest.dir/rule
-
-# Convenience name for target.
-KernelForTest: head_tool/CMakeFiles/KernelForTest.dir/rule
-.PHONY : KernelForTest
-
-# fast build rule for target.
-KernelForTest/fast:
-	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f head_tool/CMakeFiles/KernelForTest.dir/build.make head_tool/CMakeFiles/KernelForTest.dir/build
-.PHONY : KernelForTest/fast
-
-KernelForTest.o: KernelForTest.cu.o
-.PHONY : KernelForTest.o
-
-# target to build an object file
-KernelForTest.cu.o:
-	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f head_tool/CMakeFiles/KernelForTest.dir/build.make head_tool/CMakeFiles/KernelForTest.dir/KernelForTest.cu.o
-.PHONY : KernelForTest.cu.o
-
-KernelForTest.i: KernelForTest.cu.i
-.PHONY : KernelForTest.i
-
-# target to preprocess a source file
-KernelForTest.cu.i:
-	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f head_tool/CMakeFiles/KernelForTest.dir/build.make head_tool/CMakeFiles/KernelForTest.dir/KernelForTest.cu.i
-.PHONY : KernelForTest.cu.i
-
-KernelForTest.s: KernelForTest.cu.s
-.PHONY : KernelForTest.s
-
-# target to generate assembly for a file
-KernelForTest.cu.s:
-	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f head_tool/CMakeFiles/KernelForTest.dir/build.make head_tool/CMakeFiles/KernelForTest.dir/KernelForTest.cu.s
-.PHONY : KernelForTest.cu.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,10 +124,6 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... KernelForTest"
-	@echo "... KernelForTest.o"
-	@echo "... KernelForTest.i"
-	@echo "... KernelForTest.s"
 .PHONY : help
 
 
