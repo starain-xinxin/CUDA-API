@@ -143,6 +143,19 @@ vm_tensor/fast:
 .PHONY : vm_tensor/fast
 
 #=============================================================================
+# Target rules for targets named cudaMalloc_api
+
+# Build rule for target.
+cudaMalloc_api: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cudaMalloc_api
+.PHONY : cudaMalloc_api
+
+# fast build rule for target.
+cudaMalloc_api/fast:
+	$(MAKE) $(MAKESILENT) -f memory/CMakeFiles/cudaMalloc_api.dir/build.make memory/CMakeFiles/cudaMalloc_api.dir/build
+.PHONY : cudaMalloc_api/fast
+
+#=============================================================================
 # Target rules for targets named EventForTime
 
 # Build rule for target.
@@ -177,6 +190,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... EventForTime"
+	@echo "... cudaMalloc_api"
 	@echo "... mat_mul"
 	@echo "... stream_intro"
 	@echo "... vm_tensor"

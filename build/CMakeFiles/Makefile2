@@ -119,6 +119,7 @@ head_tool/clean:
 # Recursive "all" directory target.
 memory/all: memory/CMakeFiles/mat_mul.dir/all
 memory/all: memory/CMakeFiles/vm_tensor.dir/all
+memory/all: memory/CMakeFiles/cudaMalloc_api.dir/all
 .PHONY : memory/all
 
 # Recursive "preinstall" directory target.
@@ -128,6 +129,7 @@ memory/preinstall:
 # Recursive "clean" directory target.
 memory/clean: memory/CMakeFiles/mat_mul.dir/clean
 memory/clean: memory/CMakeFiles/vm_tensor.dir/clean
+memory/clean: memory/CMakeFiles/cudaMalloc_api.dir/clean
 .PHONY : memory/clean
 
 #=============================================================================
@@ -152,7 +154,7 @@ stream/clean: stream/CMakeFiles/stream_intro.dir/clean
 memory/CMakeFiles/mat_mul.dir/all:
 	$(MAKE) $(MAKESILENT) -f memory/CMakeFiles/mat_mul.dir/build.make memory/CMakeFiles/mat_mul.dir/depend
 	$(MAKE) $(MAKESILENT) -f memory/CMakeFiles/mat_mul.dir/build.make memory/CMakeFiles/mat_mul.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=3,4 "Built target mat_mul"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=5,6 "Built target mat_mul"
 .PHONY : memory/CMakeFiles/mat_mul.dir/all
 
 # Build rule for subdir invocation for target.
@@ -178,7 +180,7 @@ memory/CMakeFiles/mat_mul.dir/clean:
 memory/CMakeFiles/vm_tensor.dir/all:
 	$(MAKE) $(MAKESILENT) -f memory/CMakeFiles/vm_tensor.dir/build.make memory/CMakeFiles/vm_tensor.dir/depend
 	$(MAKE) $(MAKESILENT) -f memory/CMakeFiles/vm_tensor.dir/build.make memory/CMakeFiles/vm_tensor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=7,8 "Built target vm_tensor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=9,10 "Built target vm_tensor"
 .PHONY : memory/CMakeFiles/vm_tensor.dir/all
 
 # Build rule for subdir invocation for target.
@@ -196,6 +198,32 @@ vm_tensor: memory/CMakeFiles/vm_tensor.dir/rule
 memory/CMakeFiles/vm_tensor.dir/clean:
 	$(MAKE) $(MAKESILENT) -f memory/CMakeFiles/vm_tensor.dir/build.make memory/CMakeFiles/vm_tensor.dir/clean
 .PHONY : memory/CMakeFiles/vm_tensor.dir/clean
+
+#=============================================================================
+# Target rules for target memory/CMakeFiles/cudaMalloc_api.dir
+
+# All Build rule for target.
+memory/CMakeFiles/cudaMalloc_api.dir/all:
+	$(MAKE) $(MAKESILENT) -f memory/CMakeFiles/cudaMalloc_api.dir/build.make memory/CMakeFiles/cudaMalloc_api.dir/depend
+	$(MAKE) $(MAKESILENT) -f memory/CMakeFiles/cudaMalloc_api.dir/build.make memory/CMakeFiles/cudaMalloc_api.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=3,4 "Built target cudaMalloc_api"
+.PHONY : memory/CMakeFiles/cudaMalloc_api.dir/all
+
+# Build rule for subdir invocation for target.
+memory/CMakeFiles/cudaMalloc_api.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 memory/CMakeFiles/cudaMalloc_api.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles 0
+.PHONY : memory/CMakeFiles/cudaMalloc_api.dir/rule
+
+# Convenience name for target.
+cudaMalloc_api: memory/CMakeFiles/cudaMalloc_api.dir/rule
+.PHONY : cudaMalloc_api
+
+# clean rule for target.
+memory/CMakeFiles/cudaMalloc_api.dir/clean:
+	$(MAKE) $(MAKESILENT) -f memory/CMakeFiles/cudaMalloc_api.dir/build.make memory/CMakeFiles/cudaMalloc_api.dir/clean
+.PHONY : memory/CMakeFiles/cudaMalloc_api.dir/clean
 
 #=============================================================================
 # Target rules for target event/CMakeFiles/EventForTime.dir
@@ -230,7 +258,7 @@ event/CMakeFiles/EventForTime.dir/clean:
 stream/CMakeFiles/stream_intro.dir/all:
 	$(MAKE) $(MAKESILENT) -f stream/CMakeFiles/stream_intro.dir/build.make stream/CMakeFiles/stream_intro.dir/depend
 	$(MAKE) $(MAKESILENT) -f stream/CMakeFiles/stream_intro.dir/build.make stream/CMakeFiles/stream_intro.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=5,6 "Built target stream_intro"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=7,8 "Built target stream_intro"
 .PHONY : stream/CMakeFiles/stream_intro.dir/all
 
 # Build rule for subdir invocation for target.

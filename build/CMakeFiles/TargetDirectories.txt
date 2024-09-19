@@ -4,6 +4,7 @@
 /home/yuanxinyu/CUDA_project/CUDA_API/build/head_tool/CMakeFiles/rebuild_cache.dir
 /home/yuanxinyu/CUDA_project/CUDA_API/build/memory/CMakeFiles/mat_mul.dir
 /home/yuanxinyu/CUDA_project/CUDA_API/build/memory/CMakeFiles/vm_tensor.dir
+/home/yuanxinyu/CUDA_project/CUDA_API/build/memory/CMakeFiles/cudaMalloc_api.dir
 /home/yuanxinyu/CUDA_project/CUDA_API/build/memory/CMakeFiles/edit_cache.dir
 /home/yuanxinyu/CUDA_project/CUDA_API/build/memory/CMakeFiles/rebuild_cache.dir
 /home/yuanxinyu/CUDA_project/CUDA_API/build/event/CMakeFiles/EventForTime.dir

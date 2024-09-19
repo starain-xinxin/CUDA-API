@@ -146,6 +146,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "memory/CMakeFiles/mat_mul.dir/DependInfo.cmake"
   "memory/CMakeFiles/vm_tensor.dir/DependInfo.cmake"
+  "memory/CMakeFiles/cudaMalloc_api.dir/DependInfo.cmake"
   "event/CMakeFiles/EventForTime.dir/DependInfo.cmake"
   "stream/CMakeFiles/stream_intro.dir/DependInfo.cmake"
   )

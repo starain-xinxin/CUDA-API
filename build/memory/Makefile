@@ -144,6 +144,44 @@ vm_tensor/fast:
 	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f memory/CMakeFiles/vm_tensor.dir/build.make memory/CMakeFiles/vm_tensor.dir/build
 .PHONY : vm_tensor/fast
 
+# Convenience name for target.
+memory/CMakeFiles/cudaMalloc_api.dir/rule:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 memory/CMakeFiles/cudaMalloc_api.dir/rule
+.PHONY : memory/CMakeFiles/cudaMalloc_api.dir/rule
+
+# Convenience name for target.
+cudaMalloc_api: memory/CMakeFiles/cudaMalloc_api.dir/rule
+.PHONY : cudaMalloc_api
+
+# fast build rule for target.
+cudaMalloc_api/fast:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f memory/CMakeFiles/cudaMalloc_api.dir/build.make memory/CMakeFiles/cudaMalloc_api.dir/build
+.PHONY : cudaMalloc_api/fast
+
+cudaMalloc_api.o: cudaMalloc_api.cpp.o
+.PHONY : cudaMalloc_api.o
+
+# target to build an object file
+cudaMalloc_api.cpp.o:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f memory/CMakeFiles/cudaMalloc_api.dir/build.make memory/CMakeFiles/cudaMalloc_api.dir/cudaMalloc_api.cpp.o
+.PHONY : cudaMalloc_api.cpp.o
+
+cudaMalloc_api.i: cudaMalloc_api.cpp.i
+.PHONY : cudaMalloc_api.i
+
+# target to preprocess a source file
+cudaMalloc_api.cpp.i:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f memory/CMakeFiles/cudaMalloc_api.dir/build.make memory/CMakeFiles/cudaMalloc_api.dir/cudaMalloc_api.cpp.i
+.PHONY : cudaMalloc_api.cpp.i
+
+cudaMalloc_api.s: cudaMalloc_api.cpp.s
+.PHONY : cudaMalloc_api.s
+
+# target to generate assembly for a file
+cudaMalloc_api.cpp.s:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f memory/CMakeFiles/cudaMalloc_api.dir/build.make memory/CMakeFiles/cudaMalloc_api.dir/cudaMalloc_api.cpp.s
+.PHONY : cudaMalloc_api.cpp.s
+
 mat_mul.o: mat_mul.cu.o
 .PHONY : mat_mul.o
 
@@ -200,8 +238,12 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... cudaMalloc_api"
 	@echo "... mat_mul"
 	@echo "... vm_tensor"
+	@echo "... cudaMalloc_api.o"
+	@echo "... cudaMalloc_api.i"
+	@echo "... cudaMalloc_api.s"
 	@echo "... mat_mul.o"
 	@echo "... mat_mul.i"
 	@echo "... mat_mul.s"
