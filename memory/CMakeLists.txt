@@ -6,6 +6,7 @@ set(SOURCE_FILES
     vm_tensor.cu
     cudaMalloc_api.cpp
     vmm_api.cpp
+    mem_info_api.cpp
 )
 # 对于所有cpp和cu文件，生成对应的目标文件
 foreach(SRC ${SOURCE_FILES})
