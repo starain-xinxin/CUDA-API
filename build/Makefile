@@ -156,6 +156,32 @@ cudaMalloc_api/fast:
 .PHONY : cudaMalloc_api/fast
 
 #=============================================================================
+# Target rules for targets named vmm_api
+
+# Build rule for target.
+vmm_api: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vmm_api
+.PHONY : vmm_api
+
+# fast build rule for target.
+vmm_api/fast:
+	$(MAKE) $(MAKESILENT) -f memory/CMakeFiles/vmm_api.dir/build.make memory/CMakeFiles/vmm_api.dir/build
+.PHONY : vmm_api/fast
+
+#=============================================================================
+# Target rules for targets named mem_info_api
+
+# Build rule for target.
+mem_info_api: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mem_info_api
+.PHONY : mem_info_api
+
+# fast build rule for target.
+mem_info_api/fast:
+	$(MAKE) $(MAKESILENT) -f memory/CMakeFiles/mem_info_api.dir/build.make memory/CMakeFiles/mem_info_api.dir/build
+.PHONY : mem_info_api/fast
+
+#=============================================================================
 # Target rules for targets named EventForTime
 
 # Build rule for target.
@@ -167,6 +193,19 @@ EventForTime: cmake_check_build_system
 EventForTime/fast:
 	$(MAKE) $(MAKESILENT) -f event/CMakeFiles/EventForTime.dir/build.make event/CMakeFiles/EventForTime.dir/build
 .PHONY : EventForTime/fast
+
+#=============================================================================
+# Target rules for targets named EventForSyn
+
+# Build rule for target.
+EventForSyn: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 EventForSyn
+.PHONY : EventForSyn
+
+# fast build rule for target.
+EventForSyn/fast:
+	$(MAKE) $(MAKESILENT) -f event/CMakeFiles/EventForSyn.dir/build.make event/CMakeFiles/EventForSyn.dir/build
+.PHONY : EventForSyn/fast
 
 #=============================================================================
 # Target rules for targets named stream_intro
@@ -181,6 +220,19 @@ stream_intro/fast:
 	$(MAKE) $(MAKESILENT) -f stream/CMakeFiles/stream_intro.dir/build.make stream/CMakeFiles/stream_intro.dir/build
 .PHONY : stream_intro/fast
 
+#=============================================================================
+# Target rules for targets named priority
+
+# Build rule for target.
+priority: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 priority
+.PHONY : priority
+
+# fast build rule for target.
+priority/fast:
+	$(MAKE) $(MAKESILENT) -f stream/CMakeFiles/priority.dir/build.make stream/CMakeFiles/priority.dir/build
+.PHONY : priority/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -189,11 +241,15 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... EventForSyn"
 	@echo "... EventForTime"
 	@echo "... cudaMalloc_api"
 	@echo "... mat_mul"
+	@echo "... mem_info_api"
+	@echo "... priority"
 	@echo "... stream_intro"
 	@echo "... vm_tensor"
+	@echo "... vmm_api"
 .PHONY : help
 
 

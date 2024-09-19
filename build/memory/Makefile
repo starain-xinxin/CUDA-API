@@ -158,6 +158,34 @@ cudaMalloc_api/fast:
 	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f memory/CMakeFiles/cudaMalloc_api.dir/build.make memory/CMakeFiles/cudaMalloc_api.dir/build
 .PHONY : cudaMalloc_api/fast
 
+# Convenience name for target.
+memory/CMakeFiles/vmm_api.dir/rule:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 memory/CMakeFiles/vmm_api.dir/rule
+.PHONY : memory/CMakeFiles/vmm_api.dir/rule
+
+# Convenience name for target.
+vmm_api: memory/CMakeFiles/vmm_api.dir/rule
+.PHONY : vmm_api
+
+# fast build rule for target.
+vmm_api/fast:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f memory/CMakeFiles/vmm_api.dir/build.make memory/CMakeFiles/vmm_api.dir/build
+.PHONY : vmm_api/fast
+
+# Convenience name for target.
+memory/CMakeFiles/mem_info_api.dir/rule:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 memory/CMakeFiles/mem_info_api.dir/rule
+.PHONY : memory/CMakeFiles/mem_info_api.dir/rule
+
+# Convenience name for target.
+mem_info_api: memory/CMakeFiles/mem_info_api.dir/rule
+.PHONY : mem_info_api
+
+# fast build rule for target.
+mem_info_api/fast:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f memory/CMakeFiles/mem_info_api.dir/build.make memory/CMakeFiles/mem_info_api.dir/build
+.PHONY : mem_info_api/fast
+
 cudaMalloc_api.o: cudaMalloc_api.cpp.o
 .PHONY : cudaMalloc_api.o
 
@@ -206,6 +234,30 @@ mat_mul.cu.s:
 	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f memory/CMakeFiles/mat_mul.dir/build.make memory/CMakeFiles/mat_mul.dir/mat_mul.cu.s
 .PHONY : mat_mul.cu.s
 
+mem_info_api.o: mem_info_api.cpp.o
+.PHONY : mem_info_api.o
+
+# target to build an object file
+mem_info_api.cpp.o:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f memory/CMakeFiles/mem_info_api.dir/build.make memory/CMakeFiles/mem_info_api.dir/mem_info_api.cpp.o
+.PHONY : mem_info_api.cpp.o
+
+mem_info_api.i: mem_info_api.cpp.i
+.PHONY : mem_info_api.i
+
+# target to preprocess a source file
+mem_info_api.cpp.i:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f memory/CMakeFiles/mem_info_api.dir/build.make memory/CMakeFiles/mem_info_api.dir/mem_info_api.cpp.i
+.PHONY : mem_info_api.cpp.i
+
+mem_info_api.s: mem_info_api.cpp.s
+.PHONY : mem_info_api.s
+
+# target to generate assembly for a file
+mem_info_api.cpp.s:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f memory/CMakeFiles/mem_info_api.dir/build.make memory/CMakeFiles/mem_info_api.dir/mem_info_api.cpp.s
+.PHONY : mem_info_api.cpp.s
+
 vm_tensor.o: vm_tensor.cu.o
 .PHONY : vm_tensor.o
 
@@ -230,6 +282,30 @@ vm_tensor.cu.s:
 	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f memory/CMakeFiles/vm_tensor.dir/build.make memory/CMakeFiles/vm_tensor.dir/vm_tensor.cu.s
 .PHONY : vm_tensor.cu.s
 
+vmm_api.o: vmm_api.cpp.o
+.PHONY : vmm_api.o
+
+# target to build an object file
+vmm_api.cpp.o:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f memory/CMakeFiles/vmm_api.dir/build.make memory/CMakeFiles/vmm_api.dir/vmm_api.cpp.o
+.PHONY : vmm_api.cpp.o
+
+vmm_api.i: vmm_api.cpp.i
+.PHONY : vmm_api.i
+
+# target to preprocess a source file
+vmm_api.cpp.i:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f memory/CMakeFiles/vmm_api.dir/build.make memory/CMakeFiles/vmm_api.dir/vmm_api.cpp.i
+.PHONY : vmm_api.cpp.i
+
+vmm_api.s: vmm_api.cpp.s
+.PHONY : vmm_api.s
+
+# target to generate assembly for a file
+vmm_api.cpp.s:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f memory/CMakeFiles/vmm_api.dir/build.make memory/CMakeFiles/vmm_api.dir/vmm_api.cpp.s
+.PHONY : vmm_api.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -240,16 +316,24 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... cudaMalloc_api"
 	@echo "... mat_mul"
+	@echo "... mem_info_api"
 	@echo "... vm_tensor"
+	@echo "... vmm_api"
 	@echo "... cudaMalloc_api.o"
 	@echo "... cudaMalloc_api.i"
 	@echo "... cudaMalloc_api.s"
 	@echo "... mat_mul.o"
 	@echo "... mat_mul.i"
 	@echo "... mat_mul.s"
+	@echo "... mem_info_api.o"
+	@echo "... mem_info_api.i"
+	@echo "... mem_info_api.s"
 	@echo "... vm_tensor.o"
 	@echo "... vm_tensor.i"
 	@echo "... vm_tensor.s"
+	@echo "... vmm_api.o"
+	@echo "... vmm_api.i"
+	@echo "... vmm_api.s"
 .PHONY : help
 
 

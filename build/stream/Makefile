@@ -130,6 +130,44 @@ stream_intro/fast:
 	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f stream/CMakeFiles/stream_intro.dir/build.make stream/CMakeFiles/stream_intro.dir/build
 .PHONY : stream_intro/fast
 
+# Convenience name for target.
+stream/CMakeFiles/priority.dir/rule:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stream/CMakeFiles/priority.dir/rule
+.PHONY : stream/CMakeFiles/priority.dir/rule
+
+# Convenience name for target.
+priority: stream/CMakeFiles/priority.dir/rule
+.PHONY : priority
+
+# fast build rule for target.
+priority/fast:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f stream/CMakeFiles/priority.dir/build.make stream/CMakeFiles/priority.dir/build
+.PHONY : priority/fast
+
+priority.o: priority.cu.o
+.PHONY : priority.o
+
+# target to build an object file
+priority.cu.o:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f stream/CMakeFiles/priority.dir/build.make stream/CMakeFiles/priority.dir/priority.cu.o
+.PHONY : priority.cu.o
+
+priority.i: priority.cu.i
+.PHONY : priority.i
+
+# target to preprocess a source file
+priority.cu.i:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f stream/CMakeFiles/priority.dir/build.make stream/CMakeFiles/priority.dir/priority.cu.i
+.PHONY : priority.cu.i
+
+priority.s: priority.cu.s
+.PHONY : priority.s
+
+# target to generate assembly for a file
+priority.cu.s:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f stream/CMakeFiles/priority.dir/build.make stream/CMakeFiles/priority.dir/priority.cu.s
+.PHONY : priority.cu.s
+
 stream_intro.o: stream_intro.cu.o
 .PHONY : stream_intro.o
 
@@ -162,7 +200,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... priority"
 	@echo "... stream_intro"
+	@echo "... priority.o"
+	@echo "... priority.i"
+	@echo "... priority.s"
 	@echo "... stream_intro.o"
 	@echo "... stream_intro.i"
 	@echo "... stream_intro.s"

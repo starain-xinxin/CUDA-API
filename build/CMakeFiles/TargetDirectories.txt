@@ -5,11 +5,15 @@
 /home/yuanxinyu/CUDA_project/CUDA_API/build/memory/CMakeFiles/mat_mul.dir
 /home/yuanxinyu/CUDA_project/CUDA_API/build/memory/CMakeFiles/vm_tensor.dir
 /home/yuanxinyu/CUDA_project/CUDA_API/build/memory/CMakeFiles/cudaMalloc_api.dir
+/home/yuanxinyu/CUDA_project/CUDA_API/build/memory/CMakeFiles/vmm_api.dir
+/home/yuanxinyu/CUDA_project/CUDA_API/build/memory/CMakeFiles/mem_info_api.dir
 /home/yuanxinyu/CUDA_project/CUDA_API/build/memory/CMakeFiles/edit_cache.dir
 /home/yuanxinyu/CUDA_project/CUDA_API/build/memory/CMakeFiles/rebuild_cache.dir
 /home/yuanxinyu/CUDA_project/CUDA_API/build/event/CMakeFiles/EventForTime.dir
+/home/yuanxinyu/CUDA_project/CUDA_API/build/event/CMakeFiles/EventForSyn.dir
 /home/yuanxinyu/CUDA_project/CUDA_API/build/event/CMakeFiles/edit_cache.dir
 /home/yuanxinyu/CUDA_project/CUDA_API/build/event/CMakeFiles/rebuild_cache.dir
 /home/yuanxinyu/CUDA_project/CUDA_API/build/stream/CMakeFiles/stream_intro.dir
+/home/yuanxinyu/CUDA_project/CUDA_API/build/stream/CMakeFiles/priority.dir
 /home/yuanxinyu/CUDA_project/CUDA_API/build/stream/CMakeFiles/edit_cache.dir
 /home/yuanxinyu/CUDA_project/CUDA_API/build/stream/CMakeFiles/rebuild_cache.dir

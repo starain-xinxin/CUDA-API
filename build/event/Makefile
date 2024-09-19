@@ -130,6 +130,44 @@ EventForTime/fast:
 	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f event/CMakeFiles/EventForTime.dir/build.make event/CMakeFiles/EventForTime.dir/build
 .PHONY : EventForTime/fast
 
+# Convenience name for target.
+event/CMakeFiles/EventForSyn.dir/rule:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 event/CMakeFiles/EventForSyn.dir/rule
+.PHONY : event/CMakeFiles/EventForSyn.dir/rule
+
+# Convenience name for target.
+EventForSyn: event/CMakeFiles/EventForSyn.dir/rule
+.PHONY : EventForSyn
+
+# fast build rule for target.
+EventForSyn/fast:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f event/CMakeFiles/EventForSyn.dir/build.make event/CMakeFiles/EventForSyn.dir/build
+.PHONY : EventForSyn/fast
+
+EventForSyn.o: EventForSyn.cu.o
+.PHONY : EventForSyn.o
+
+# target to build an object file
+EventForSyn.cu.o:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f event/CMakeFiles/EventForSyn.dir/build.make event/CMakeFiles/EventForSyn.dir/EventForSyn.cu.o
+.PHONY : EventForSyn.cu.o
+
+EventForSyn.i: EventForSyn.cu.i
+.PHONY : EventForSyn.i
+
+# target to preprocess a source file
+EventForSyn.cu.i:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f event/CMakeFiles/EventForSyn.dir/build.make event/CMakeFiles/EventForSyn.dir/EventForSyn.cu.i
+.PHONY : EventForSyn.cu.i
+
+EventForSyn.s: EventForSyn.cu.s
+.PHONY : EventForSyn.s
+
+# target to generate assembly for a file
+EventForSyn.cu.s:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f event/CMakeFiles/EventForSyn.dir/build.make event/CMakeFiles/EventForSyn.dir/EventForSyn.cu.s
+.PHONY : EventForSyn.cu.s
+
 EventForTime.o: EventForTime.cu.o
 .PHONY : EventForTime.o
 
@@ -162,7 +200,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... EventForSyn"
 	@echo "... EventForTime"
+	@echo "... EventForSyn.o"
+	@echo "... EventForSyn.i"
+	@echo "... EventForSyn.s"
 	@echo "... EventForTime.o"
 	@echo "... EventForTime.i"
 	@echo "... EventForTime.s"

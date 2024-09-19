@@ -147,6 +147,10 @@ set(CMAKE_DEPEND_INFO_FILES
   "memory/CMakeFiles/mat_mul.dir/DependInfo.cmake"
   "memory/CMakeFiles/vm_tensor.dir/DependInfo.cmake"
   "memory/CMakeFiles/cudaMalloc_api.dir/DependInfo.cmake"
+  "memory/CMakeFiles/vmm_api.dir/DependInfo.cmake"
+  "memory/CMakeFiles/mem_info_api.dir/DependInfo.cmake"
   "event/CMakeFiles/EventForTime.dir/DependInfo.cmake"
+  "event/CMakeFiles/EventForSyn.dir/DependInfo.cmake"
   "stream/CMakeFiles/stream_intro.dir/DependInfo.cmake"
+  "stream/CMakeFiles/priority.dir/DependInfo.cmake"
   )
