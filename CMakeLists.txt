@@ -25,6 +25,17 @@ list(APPEND CUDA_API_LINK_LIST "CUDA::cudart")      # 运行时库
 list(APPEND CUDA_API_LINK_LIST "CUDA::cuda_driver") # 驱动库
 list(APPEND CUDA_API_INCLUDE_LIST "${CUDAToolkit_INCLUDE_DIRS}")   # CUDAToolkit头文件路径
 
+# -----------------引入第三方库 ------------------ #
+# GoogleTest测试框架
+include(FetchContent)
+FetchContent_Declare(
+  googletest
+  GIT_REPOSITORY https://github.com/google/googletest.git
+  GIT_TAG        release-1.12.1
+)
+FetchContent_MakeAvailable(googletest)
+# TODO: 链接库与头文件包含
+
 # ----------------- 管理子目录 ------------------ #
 set(SUBDIR_LIST 
     head_tool
@@ -36,6 +47,15 @@ foreach(subdir ${SUBDIR_LIST})         # 包含所有子目录
     list(APPEND CUDA_API_INCLUDE_LIST "${CMAKE_SOURCE_DIR}/${subdir}")   
     add_subdirectory(${subdir})
 endforeach()
+
+# ----------------- 管理需要使用链接库的子目录 ------------------ #
+set(SUBDIR_USELIB_LIST
+    test
+)
+foreach(subdir_uselib ${SUBDIR_USELIB_LIST})
+    add_subdirectory(${subdir_uselib})
+endforeach()
+
 
 
 
