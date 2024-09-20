@@ -73,15 +73,15 @@ memory/CMakeFiles/mem_info_api.dir/mem_info_api.cpp.o: memory/CMakeFiles/mem_inf
 memory/CMakeFiles/mem_info_api.dir/mem_info_api.cpp.o: ../memory/mem_info_api.cpp
 memory/CMakeFiles/mem_info_api.dir/mem_info_api.cpp.o: memory/CMakeFiles/mem_info_api.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object memory/CMakeFiles/mem_info_api.dir/mem_info_api.cpp.o"
-	cd /home/yuanxinyu/CUDA_project/CUDA_API/build/memory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT memory/CMakeFiles/mem_info_api.dir/mem_info_api.cpp.o -MF CMakeFiles/mem_info_api.dir/mem_info_api.cpp.o.d -o CMakeFiles/mem_info_api.dir/mem_info_api.cpp.o -c /home/yuanxinyu/CUDA_project/CUDA_API/memory/mem_info_api.cpp
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build/memory && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT memory/CMakeFiles/mem_info_api.dir/mem_info_api.cpp.o -MF CMakeFiles/mem_info_api.dir/mem_info_api.cpp.o.d -o CMakeFiles/mem_info_api.dir/mem_info_api.cpp.o -c /home/yuanxinyu/CUDA_project/CUDA_API/memory/mem_info_api.cpp
 
 memory/CMakeFiles/mem_info_api.dir/mem_info_api.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mem_info_api.dir/mem_info_api.cpp.i"
-	cd /home/yuanxinyu/CUDA_project/CUDA_API/build/memory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yuanxinyu/CUDA_project/CUDA_API/memory/mem_info_api.cpp > CMakeFiles/mem_info_api.dir/mem_info_api.cpp.i
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build/memory && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yuanxinyu/CUDA_project/CUDA_API/memory/mem_info_api.cpp > CMakeFiles/mem_info_api.dir/mem_info_api.cpp.i
 
 memory/CMakeFiles/mem_info_api.dir/mem_info_api.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mem_info_api.dir/mem_info_api.cpp.s"
-	cd /home/yuanxinyu/CUDA_project/CUDA_API/build/memory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yuanxinyu/CUDA_project/CUDA_API/memory/mem_info_api.cpp -o CMakeFiles/mem_info_api.dir/mem_info_api.cpp.s
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build/memory && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yuanxinyu/CUDA_project/CUDA_API/memory/mem_info_api.cpp -o CMakeFiles/mem_info_api.dir/mem_info_api.cpp.s
 
 # Object files for target mem_info_api
 mem_info_api_OBJECTS = \

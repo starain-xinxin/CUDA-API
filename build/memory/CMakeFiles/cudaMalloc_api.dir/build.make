@@ -73,15 +73,15 @@ memory/CMakeFiles/cudaMalloc_api.dir/cudaMalloc_api.cpp.o: memory/CMakeFiles/cud
 memory/CMakeFiles/cudaMalloc_api.dir/cudaMalloc_api.cpp.o: ../memory/cudaMalloc_api.cpp
 memory/CMakeFiles/cudaMalloc_api.dir/cudaMalloc_api.cpp.o: memory/CMakeFiles/cudaMalloc_api.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object memory/CMakeFiles/cudaMalloc_api.dir/cudaMalloc_api.cpp.o"
-	cd /home/yuanxinyu/CUDA_project/CUDA_API/build/memory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT memory/CMakeFiles/cudaMalloc_api.dir/cudaMalloc_api.cpp.o -MF CMakeFiles/cudaMalloc_api.dir/cudaMalloc_api.cpp.o.d -o CMakeFiles/cudaMalloc_api.dir/cudaMalloc_api.cpp.o -c /home/yuanxinyu/CUDA_project/CUDA_API/memory/cudaMalloc_api.cpp
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build/memory && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT memory/CMakeFiles/cudaMalloc_api.dir/cudaMalloc_api.cpp.o -MF CMakeFiles/cudaMalloc_api.dir/cudaMalloc_api.cpp.o.d -o CMakeFiles/cudaMalloc_api.dir/cudaMalloc_api.cpp.o -c /home/yuanxinyu/CUDA_project/CUDA_API/memory/cudaMalloc_api.cpp
 
 memory/CMakeFiles/cudaMalloc_api.dir/cudaMalloc_api.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cudaMalloc_api.dir/cudaMalloc_api.cpp.i"
-	cd /home/yuanxinyu/CUDA_project/CUDA_API/build/memory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yuanxinyu/CUDA_project/CUDA_API/memory/cudaMalloc_api.cpp > CMakeFiles/cudaMalloc_api.dir/cudaMalloc_api.cpp.i
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build/memory && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yuanxinyu/CUDA_project/CUDA_API/memory/cudaMalloc_api.cpp > CMakeFiles/cudaMalloc_api.dir/cudaMalloc_api.cpp.i
 
 memory/CMakeFiles/cudaMalloc_api.dir/cudaMalloc_api.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cudaMalloc_api.dir/cudaMalloc_api.cpp.s"
-	cd /home/yuanxinyu/CUDA_project/CUDA_API/build/memory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yuanxinyu/CUDA_project/CUDA_API/memory/cudaMalloc_api.cpp -o CMakeFiles/cudaMalloc_api.dir/cudaMalloc_api.cpp.s
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build/memory && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yuanxinyu/CUDA_project/CUDA_API/memory/cudaMalloc_api.cpp -o CMakeFiles/cudaMalloc_api.dir/cudaMalloc_api.cpp.s
 
 # Object files for target cudaMalloc_api
 cudaMalloc_api_OBJECTS = \

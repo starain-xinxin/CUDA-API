@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/cudaMalloc_api.dir/cudaMalloc_api.cpp.o -o cudaMalloc_api  -Wl,-rpath,/usr/local/cuda-12.2/lib64 /usr/local/cuda-12.2/lib64/libcudart.so /usr/lib/x86_64-linux-gnu/libcuda.so 
+/usr/bin/g++ CMakeFiles/cudaMalloc_api.dir/cudaMalloc_api.cpp.o -o cudaMalloc_api  -Wl,-rpath,/usr/local/cuda-12.2/lib64 /usr/local/cuda-12.2/lib64/libcudart.so /usr/lib/x86_64-linux-gnu/libcuda.so 

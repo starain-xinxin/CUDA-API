@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/mem_info_api.dir/mem_info_api.cpp.o -o mem_info_api  -Wl,-rpath,/usr/local/cuda-12.2/lib64 /usr/local/cuda-12.2/lib64/libcudart.so /usr/lib/x86_64-linux-gnu/libcuda.so 
+/usr/bin/g++ CMakeFiles/mem_info_api.dir/mem_info_api.cpp.o -o mem_info_api  -Wl,-rpath,/usr/local/cuda-12.2/lib64 /usr/local/cuda-12.2/lib64/libcudart.so /usr/lib/x86_64-linux-gnu/libcuda.so 

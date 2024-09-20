@@ -2,7 +2,7 @@ message(STATUS "event build ...")
 
 # 生成动态库
 add_library(EventPool SHARED Event_Pool.cpp)
-target_include_directories(EventPool PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}" CUDA_API_INCLUDE_LIST) 
+target_include_directories(EventPool PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}" "${CUDA_API_INCLUDE_LIST}") 
 
 # 所有生成的动态库都加入链接库列表
 set(EVENT_LINK_LIB_LIST 

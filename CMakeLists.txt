@@ -2,11 +2,17 @@ cmake_minimum_required(VERSION 3.20)
 
 project(CUDA_API LANGUAGES CUDA CXX C)
 
-# -------------------目标构建需要的库和头文件路径放置在下面变量中 ------------------ #
+# ------------------- Cpp标准设置 ------------------------#
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# ------------------- 目标构建需要的库和头文件路径放置在下面变量中 ------------------ #
 #- 链接库 CUDA_API_LINK_LIST
 #- 头文件路径 CUDA_API_INCLUDE_LIST
 set(CUDA_API_LINK_LIST)
 set(CUDA_API_INCLUDE_LIST)
+message(STATUS "C Compiler: ${CMAKE_C_COMPILER}")
+message(STATUS "C++ Compiler: ${CMAKE_CXX_COMPILER}")
 
 # -------------------- CUDA设置部分 --------------------- #
 find_package(CUDAToolkit REQUIRED)

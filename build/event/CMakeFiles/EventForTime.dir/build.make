@@ -94,6 +94,7 @@ event/EventForTime: event/CMakeFiles/EventForTime.dir/EventForTime.cu.o
 event/EventForTime: event/CMakeFiles/EventForTime.dir/build.make
 event/EventForTime: /usr/local/cuda-12.2/lib64/libcudart.so
 event/EventForTime: /usr/lib/x86_64-linux-gnu/libcuda.so
+event/EventForTime: event/libEventPool.so
 event/EventForTime: event/CMakeFiles/EventForTime.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CUDA executable EventForTime"
 	cd /home/yuanxinyu/CUDA_project/CUDA_API/build/event && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/EventForTime.dir/link.txt --verbose=$(VERBOSE)

@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/vmm_api.dir/vmm_api.cpp.o -o vmm_api  -Wl,-rpath,/usr/local/cuda-12.2/lib64 /usr/local/cuda-12.2/lib64/libcudart.so /usr/lib/x86_64-linux-gnu/libcuda.so 
+/usr/bin/g++ CMakeFiles/vmm_api.dir/vmm_api.cpp.o -o vmm_api  -Wl,-rpath,/usr/local/cuda-12.2/lib64 /usr/local/cuda-12.2/lib64/libcudart.so /usr/lib/x86_64-linux-gnu/libcuda.so 

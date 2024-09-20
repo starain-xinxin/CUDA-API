@@ -94,6 +94,7 @@ stream/priority: stream/CMakeFiles/priority.dir/priority.cu.o
 stream/priority: stream/CMakeFiles/priority.dir/build.make
 stream/priority: /usr/local/cuda-12.2/lib64/libcudart.so
 stream/priority: /usr/lib/x86_64-linux-gnu/libcuda.so
+stream/priority: event/libEventPool.so
 stream/priority: stream/CMakeFiles/priority.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CUDA executable priority"
 	cd /home/yuanxinyu/CUDA_project/CUDA_API/build/stream && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/priority.dir/link.txt --verbose=$(VERBOSE)

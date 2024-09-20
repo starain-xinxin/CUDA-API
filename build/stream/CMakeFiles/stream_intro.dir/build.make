@@ -94,6 +94,7 @@ stream/stream_intro: stream/CMakeFiles/stream_intro.dir/stream_intro.cu.o
 stream/stream_intro: stream/CMakeFiles/stream_intro.dir/build.make
 stream/stream_intro: /usr/local/cuda-12.2/lib64/libcudart.so
 stream/stream_intro: /usr/lib/x86_64-linux-gnu/libcuda.so
+stream/stream_intro: event/libEventPool.so
 stream/stream_intro: stream/CMakeFiles/stream_intro.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CUDA executable stream_intro"
 	cd /home/yuanxinyu/CUDA_project/CUDA_API/build/stream && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/stream_intro.dir/link.txt --verbose=$(VERBOSE)
