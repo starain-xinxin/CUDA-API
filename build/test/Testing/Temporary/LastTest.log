@@ -1,19 +1,19 @@
-Start testing: Sep 21 18:11 CST
+Start testing: Sep 21 18:32 CST
 ----------------------------------------------------------
 1/1 Testing: EventPoolTest
 1/1 Test: EventPoolTest
 Command: "/home/yuanxinyu/CUDA_project/CUDA_API/build/test/EventPoolTest"
 Directory: /home/yuanxinyu/CUDA_project/CUDA_API/build/test
-"EventPoolTest" start time: Sep 21 18:11 CST
+"EventPoolTest" start time: Sep 21 18:32 CST
 Output:
 ----------------------------------------------------------
 设备0 cudaEventBlockingSync类型的事件池拥有空闲的事件：2
 <end of output>
-Test time =   0.38 sec
+Test time =   0.39 sec
 ----------------------------------------------------------
 Test Passed.
-"EventPoolTest" end time: Sep 21 18:11 CST
+"EventPoolTest" end time: Sep 21 18:32 CST
 "EventPoolTest" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Sep 21 18:11 CST
+End testing: Sep 21 18:32 CST
