@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/yuanxinyu/CUDA_project/CUDA_API/event/EventForSyn.cu" "event/CMakeFiles/EventForSyn.dir/EventForSyn.cu.o" "gcc" "event/CMakeFiles/EventForSyn.dir/EventForSyn.cu.o.d"
+  "/home/yuanxinyu/CUDA_project/CUDA_API/event/EventForSyn.cpp" "event/CMakeFiles/EventForSyn.dir/EventForSyn.cpp.o" "gcc" "event/CMakeFiles/EventForSyn.dir/EventForSyn.cpp.o.d"
   )
 
 # Targets to which this target links.

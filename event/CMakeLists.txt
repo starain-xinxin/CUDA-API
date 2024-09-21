@@ -18,7 +18,7 @@ endforeach()
 # 需要生成目标文件的源文件列表
 set(SOURCE_FILES
     EventForTime.cu
-    EventForSyn.cu
+    EventForSyn.cpp
 )
 # 对于所有cpp和cu文件，生成对应的目标文件
 message(STATUS "头文件包含路径：${CUDA_API_INCLUDE_LIST}  链接库：${CUDA_API_LINK_LIST}")

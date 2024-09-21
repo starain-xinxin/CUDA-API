@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/EventPoolTest.dir/test_event_pool.cpp.o -o EventPoolTest  -Wl,-rpath,/usr/local/cuda-12.2/lib64:/home/yuanxinyu/CUDA_project/CUDA_API/build/event ../lib/libgtest.a ../lib/libgtest_main.a /usr/local/cuda-12.2/lib64/libcudart.so /usr/lib/x86_64-linux-gnu/libcuda.so ../event/libEventPool.so ../lib/libgtest.a 

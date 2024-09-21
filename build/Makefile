@@ -343,6 +343,19 @@ priority/fast:
 	$(MAKE) $(MAKESILENT) -f stream/CMakeFiles/priority.dir/build.make stream/CMakeFiles/priority.dir/build
 .PHONY : priority/fast
 
+#=============================================================================
+# Target rules for targets named EventPoolTest
+
+# Build rule for target.
+EventPoolTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 EventPoolTest
+.PHONY : EventPoolTest
+
+# fast build rule for target.
+EventPoolTest/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/EventPoolTest.dir/build.make test/CMakeFiles/EventPoolTest.dir/build
+.PHONY : EventPoolTest/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -358,6 +371,7 @@ help:
 	@echo "... EventForSyn"
 	@echo "... EventForTime"
 	@echo "... EventPool"
+	@echo "... EventPoolTest"
 	@echo "... cudaMalloc_api"
 	@echo "... gmock"
 	@echo "... gmock_main"

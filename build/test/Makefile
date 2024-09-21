@@ -161,6 +161,44 @@ depend:
 	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+test/CMakeFiles/EventPoolTest.dir/rule:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/EventPoolTest.dir/rule
+.PHONY : test/CMakeFiles/EventPoolTest.dir/rule
+
+# Convenience name for target.
+EventPoolTest: test/CMakeFiles/EventPoolTest.dir/rule
+.PHONY : EventPoolTest
+
+# fast build rule for target.
+EventPoolTest/fast:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/EventPoolTest.dir/build.make test/CMakeFiles/EventPoolTest.dir/build
+.PHONY : EventPoolTest/fast
+
+test_event_pool.o: test_event_pool.cpp.o
+.PHONY : test_event_pool.o
+
+# target to build an object file
+test_event_pool.cpp.o:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/EventPoolTest.dir/build.make test/CMakeFiles/EventPoolTest.dir/test_event_pool.cpp.o
+.PHONY : test_event_pool.cpp.o
+
+test_event_pool.i: test_event_pool.cpp.i
+.PHONY : test_event_pool.i
+
+# target to preprocess a source file
+test_event_pool.cpp.i:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/EventPoolTest.dir/build.make test/CMakeFiles/EventPoolTest.dir/test_event_pool.cpp.i
+.PHONY : test_event_pool.cpp.i
+
+test_event_pool.s: test_event_pool.cpp.s
+.PHONY : test_event_pool.s
+
+# target to generate assembly for a file
+test_event_pool.cpp.s:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/EventPoolTest.dir/build.make test/CMakeFiles/EventPoolTest.dir/test_event_pool.cpp.s
+.PHONY : test_event_pool.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -173,6 +211,10 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... EventPoolTest"
+	@echo "... test_event_pool.o"
+	@echo "... test_event_pool.i"
+	@echo "... test_event_pool.s"
 .PHONY : help
 
 

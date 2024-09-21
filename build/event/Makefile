@@ -203,29 +203,29 @@ EventForSyn/fast:
 	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f event/CMakeFiles/EventForSyn.dir/build.make event/CMakeFiles/EventForSyn.dir/build
 .PHONY : EventForSyn/fast
 
-EventForSyn.o: EventForSyn.cu.o
+EventForSyn.o: EventForSyn.cpp.o
 .PHONY : EventForSyn.o
 
 # target to build an object file
-EventForSyn.cu.o:
-	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f event/CMakeFiles/EventForSyn.dir/build.make event/CMakeFiles/EventForSyn.dir/EventForSyn.cu.o
-.PHONY : EventForSyn.cu.o
+EventForSyn.cpp.o:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f event/CMakeFiles/EventForSyn.dir/build.make event/CMakeFiles/EventForSyn.dir/EventForSyn.cpp.o
+.PHONY : EventForSyn.cpp.o
 
-EventForSyn.i: EventForSyn.cu.i
+EventForSyn.i: EventForSyn.cpp.i
 .PHONY : EventForSyn.i
 
 # target to preprocess a source file
-EventForSyn.cu.i:
-	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f event/CMakeFiles/EventForSyn.dir/build.make event/CMakeFiles/EventForSyn.dir/EventForSyn.cu.i
-.PHONY : EventForSyn.cu.i
+EventForSyn.cpp.i:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f event/CMakeFiles/EventForSyn.dir/build.make event/CMakeFiles/EventForSyn.dir/EventForSyn.cpp.i
+.PHONY : EventForSyn.cpp.i
 
-EventForSyn.s: EventForSyn.cu.s
+EventForSyn.s: EventForSyn.cpp.s
 .PHONY : EventForSyn.s
 
 # target to generate assembly for a file
-EventForSyn.cu.s:
-	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f event/CMakeFiles/EventForSyn.dir/build.make event/CMakeFiles/EventForSyn.dir/EventForSyn.cu.s
-.PHONY : EventForSyn.cu.s
+EventForSyn.cpp.s:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f event/CMakeFiles/EventForSyn.dir/build.make event/CMakeFiles/EventForSyn.dir/EventForSyn.cpp.s
+.PHONY : EventForSyn.cpp.s
 
 EventForTime.o: EventForTime.cu.o
 .PHONY : EventForTime.o

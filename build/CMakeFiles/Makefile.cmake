@@ -189,4 +189,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "event/CMakeFiles/EventForSyn.dir/DependInfo.cmake"
   "stream/CMakeFiles/stream_intro.dir/DependInfo.cmake"
   "stream/CMakeFiles/priority.dir/DependInfo.cmake"
+  "test/CMakeFiles/EventPoolTest.dir/DependInfo.cmake"
   )

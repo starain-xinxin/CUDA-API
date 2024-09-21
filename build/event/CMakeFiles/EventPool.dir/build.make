@@ -73,15 +73,15 @@ event/CMakeFiles/EventPool.dir/Event_Pool.cpp.o: event/CMakeFiles/EventPool.dir/
 event/CMakeFiles/EventPool.dir/Event_Pool.cpp.o: ../event/Event_Pool.cpp
 event/CMakeFiles/EventPool.dir/Event_Pool.cpp.o: event/CMakeFiles/EventPool.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object event/CMakeFiles/EventPool.dir/Event_Pool.cpp.o"
-	cd /home/yuanxinyu/CUDA_project/CUDA_API/build/event && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT event/CMakeFiles/EventPool.dir/Event_Pool.cpp.o -MF CMakeFiles/EventPool.dir/Event_Pool.cpp.o.d -o CMakeFiles/EventPool.dir/Event_Pool.cpp.o -c /home/yuanxinyu/CUDA_project/CUDA_API/event/Event_Pool.cpp
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build/event && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT event/CMakeFiles/EventPool.dir/Event_Pool.cpp.o -MF CMakeFiles/EventPool.dir/Event_Pool.cpp.o.d -o CMakeFiles/EventPool.dir/Event_Pool.cpp.o -c /home/yuanxinyu/CUDA_project/CUDA_API/event/Event_Pool.cpp
 
 event/CMakeFiles/EventPool.dir/Event_Pool.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EventPool.dir/Event_Pool.cpp.i"
-	cd /home/yuanxinyu/CUDA_project/CUDA_API/build/event && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yuanxinyu/CUDA_project/CUDA_API/event/Event_Pool.cpp > CMakeFiles/EventPool.dir/Event_Pool.cpp.i
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build/event && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yuanxinyu/CUDA_project/CUDA_API/event/Event_Pool.cpp > CMakeFiles/EventPool.dir/Event_Pool.cpp.i
 
 event/CMakeFiles/EventPool.dir/Event_Pool.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EventPool.dir/Event_Pool.cpp.s"
-	cd /home/yuanxinyu/CUDA_project/CUDA_API/build/event && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yuanxinyu/CUDA_project/CUDA_API/event/Event_Pool.cpp -o CMakeFiles/EventPool.dir/Event_Pool.cpp.s
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build/event && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yuanxinyu/CUDA_project/CUDA_API/event/Event_Pool.cpp -o CMakeFiles/EventPool.dir/Event_Pool.cpp.s
 
 # Object files for target EventPool
 EventPool_OBJECTS = \
