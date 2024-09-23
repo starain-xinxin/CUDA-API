@@ -175,6 +175,20 @@ graph/fast:
 	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f graph/CMakeFiles/graph.dir/build.make graph/CMakeFiles/graph.dir/build
 .PHONY : graph/fast
 
+# Convenience name for target.
+graph/CMakeFiles/graph_mode_global.dir/rule:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 graph/CMakeFiles/graph_mode_global.dir/rule
+.PHONY : graph/CMakeFiles/graph_mode_global.dir/rule
+
+# Convenience name for target.
+graph_mode_global: graph/CMakeFiles/graph_mode_global.dir/rule
+.PHONY : graph_mode_global
+
+# fast build rule for target.
+graph_mode_global/fast:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f graph/CMakeFiles/graph_mode_global.dir/build.make graph/CMakeFiles/graph_mode_global.dir/build
+.PHONY : graph_mode_global/fast
+
 graph.o: graph.cu.o
 .PHONY : graph.o
 
@@ -199,6 +213,30 @@ graph.cu.s:
 	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f graph/CMakeFiles/graph.dir/build.make graph/CMakeFiles/graph.dir/graph.cu.s
 .PHONY : graph.cu.s
 
+graph_mode_global.o: graph_mode_global.cu.o
+.PHONY : graph_mode_global.o
+
+# target to build an object file
+graph_mode_global.cu.o:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f graph/CMakeFiles/graph_mode_global.dir/build.make graph/CMakeFiles/graph_mode_global.dir/graph_mode_global.cu.o
+.PHONY : graph_mode_global.cu.o
+
+graph_mode_global.i: graph_mode_global.cu.i
+.PHONY : graph_mode_global.i
+
+# target to preprocess a source file
+graph_mode_global.cu.i:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f graph/CMakeFiles/graph_mode_global.dir/build.make graph/CMakeFiles/graph_mode_global.dir/graph_mode_global.cu.i
+.PHONY : graph_mode_global.cu.i
+
+graph_mode_global.s: graph_mode_global.cu.s
+.PHONY : graph_mode_global.s
+
+# target to generate assembly for a file
+graph_mode_global.cu.s:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f graph/CMakeFiles/graph_mode_global.dir/build.make graph/CMakeFiles/graph_mode_global.dir/graph_mode_global.cu.s
+.PHONY : graph_mode_global.cu.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -212,9 +250,13 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... graph"
+	@echo "... graph_mode_global"
 	@echo "... graph.o"
 	@echo "... graph.i"
 	@echo "... graph.s"
+	@echo "... graph_mode_global.o"
+	@echo "... graph_mode_global.i"
+	@echo "... graph_mode_global.s"
 .PHONY : help
 
 

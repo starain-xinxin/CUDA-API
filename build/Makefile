@@ -357,6 +357,19 @@ graph/fast:
 .PHONY : graph/fast
 
 #=============================================================================
+# Target rules for targets named graph_mode_global
+
+# Build rule for target.
+graph_mode_global: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 graph_mode_global
+.PHONY : graph_mode_global
+
+# fast build rule for target.
+graph_mode_global/fast:
+	$(MAKE) $(MAKESILENT) -f graph/CMakeFiles/graph_mode_global.dir/build.make graph/CMakeFiles/graph_mode_global.dir/build
+.PHONY : graph_mode_global/fast
+
+#=============================================================================
 # Target rules for targets named EventPoolTest
 
 # Build rule for target.
@@ -389,6 +402,7 @@ help:
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... graph"
+	@echo "... graph_mode_global"
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... mat_mul"
