@@ -48,6 +48,7 @@ set(SUBDIR_LIST
     memory
     event
     stream
+    graph
 )
 foreach(subdir ${SUBDIR_LIST})         # 包含所有子目录
     list(APPEND CUDA_API_INCLUDE_LIST "${CMAKE_SOURCE_DIR}/${subdir}")   

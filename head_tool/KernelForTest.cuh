@@ -61,3 +61,9 @@ __global__ void SingleVecKernel_int64_t(int64_t* p_vec, int N, int64_t number) {
     }
 }
 
+__global__ void SingleVecAddKernel_int64_t(int64_t* p_vec, int N, int64_t number){
+    int idx = blockIdx.x * blockDim.x + threadIdx.x;
+    if (idx < N) {
+        p_vec[idx] += number;
+    }
+}

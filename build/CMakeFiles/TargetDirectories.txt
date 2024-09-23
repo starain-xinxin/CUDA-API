@@ -60,6 +60,13 @@
 /home/yuanxinyu/CUDA_project/CUDA_API/build/stream/CMakeFiles/install.dir
 /home/yuanxinyu/CUDA_project/CUDA_API/build/stream/CMakeFiles/install/local.dir
 /home/yuanxinyu/CUDA_project/CUDA_API/build/stream/CMakeFiles/install/strip.dir
+/home/yuanxinyu/CUDA_project/CUDA_API/build/graph/CMakeFiles/graph.dir
+/home/yuanxinyu/CUDA_project/CUDA_API/build/graph/CMakeFiles/edit_cache.dir
+/home/yuanxinyu/CUDA_project/CUDA_API/build/graph/CMakeFiles/rebuild_cache.dir
+/home/yuanxinyu/CUDA_project/CUDA_API/build/graph/CMakeFiles/list_install_components.dir
+/home/yuanxinyu/CUDA_project/CUDA_API/build/graph/CMakeFiles/install.dir
+/home/yuanxinyu/CUDA_project/CUDA_API/build/graph/CMakeFiles/install/local.dir
+/home/yuanxinyu/CUDA_project/CUDA_API/build/graph/CMakeFiles/install/strip.dir
 /home/yuanxinyu/CUDA_project/CUDA_API/build/test/CMakeFiles/EventPoolTest.dir
 /home/yuanxinyu/CUDA_project/CUDA_API/build/test/CMakeFiles/edit_cache.dir
 /home/yuanxinyu/CUDA_project/CUDA_API/build/test/CMakeFiles/rebuild_cache.dir

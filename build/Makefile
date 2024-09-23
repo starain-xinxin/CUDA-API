@@ -344,6 +344,19 @@ priority/fast:
 .PHONY : priority/fast
 
 #=============================================================================
+# Target rules for targets named graph
+
+# Build rule for target.
+graph: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 graph
+.PHONY : graph
+
+# fast build rule for target.
+graph/fast:
+	$(MAKE) $(MAKESILENT) -f graph/CMakeFiles/graph.dir/build.make graph/CMakeFiles/graph.dir/build
+.PHONY : graph/fast
+
+#=============================================================================
 # Target rules for targets named EventPoolTest
 
 # Build rule for target.
@@ -375,6 +388,7 @@ help:
 	@echo "... cudaMalloc_api"
 	@echo "... gmock"
 	@echo "... gmock_main"
+	@echo "... graph"
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... mat_mul"
