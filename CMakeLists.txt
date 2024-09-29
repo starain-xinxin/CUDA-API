@@ -32,14 +32,14 @@ list(APPEND CUDA_API_LINK_LIST "CUDA::cuda_driver") # 驱动库
 list(APPEND CUDA_API_INCLUDE_LIST "${CUDAToolkit_INCLUDE_DIRS}")   # CUDAToolkit头文件路径
 
 # -----------------引入第三方库 ------------------ #
-# GoogleTest测试框架
-include(FetchContent)
-FetchContent_Declare(
-  googletest
-  GIT_REPOSITORY https://github.com/google/googletest.git
-  GIT_TAG        release-1.12.1
-)
-FetchContent_MakeAvailable(googletest)
+# # GoogleTest测试框架
+# include(FetchContent)
+# FetchContent_Declare(
+#   googletest
+#   GIT_REPOSITORY https://github.com/google/googletest.git
+#   GIT_TAG        release-1.12.1
+# )
+# FetchContent_MakeAvailable(googletest)
 # TODO: 链接库与头文件包含
 
 # ----------------- 管理子目录 ------------------ #

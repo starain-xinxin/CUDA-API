@@ -29,14 +29,14 @@
 #include <memory>
 #include <cassert>
 #include <atomic>
-#include "error_handling.h"
+#include "error_handling.h" 
 
 #define NUM_EVENT_CLASS 4
 
 namespace cT{
 namespace Event{
 
-int device_count(){
+inline int device_count(){
     int DeviceCount;
     RUNTIME_CHECK(cudaGetDeviceCount(&DeviceCount));
     return DeviceCount;
@@ -135,7 +135,7 @@ class EventPool{
         std::vector<SingleDevicePool> pools;
 };
 
-EventPool& GetPool(){
+inline EventPool& GetPool(){
     return EventPool::GetEventPool();
 }
 

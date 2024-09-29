@@ -92,12 +92,9 @@ EventPoolTest_EXTERNAL_OBJECTS =
 
 test/EventPoolTest: test/CMakeFiles/EventPoolTest.dir/test_event_pool.cpp.o
 test/EventPoolTest: test/CMakeFiles/EventPoolTest.dir/build.make
-test/EventPoolTest: lib/libgtest.a
-test/EventPoolTest: lib/libgtest_main.a
 test/EventPoolTest: /usr/local/cuda-12.2/lib64/libcudart.so
 test/EventPoolTest: /usr/lib/x86_64-linux-gnu/libcuda.so
 test/EventPoolTest: event/libEventPool.so
-test/EventPoolTest: lib/libgtest.a
 test/EventPoolTest: test/CMakeFiles/EventPoolTest.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable EventPoolTest"
 	cd /home/yuanxinyu/CUDA_project/CUDA_API/build/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/EventPoolTest.dir/link.txt --verbose=$(VERBOSE)

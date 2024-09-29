@@ -63,7 +63,6 @@ CMAKE_BINARY_DIR = /home/yuanxinyu/CUDA_project/CUDA_API/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: _deps/googletest-build/all
 all: head_tool/all
 all: memory/all
 all: event/all
@@ -73,7 +72,6 @@ all: test/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: _deps/googletest-build/preinstall
 preinstall: head_tool/preinstall
 preinstall: memory/preinstall
 preinstall: event/preinstall
@@ -83,7 +81,6 @@ preinstall: test/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: _deps/googletest-build/clean
 clean: head_tool/clean
 clean: memory/clean
 clean: event/clean
@@ -91,57 +88,6 @@ clean: stream/clean
 clean: graph/clean
 clean: test/clean
 .PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory _deps/googletest-build
-
-# Recursive "all" directory target.
-_deps/googletest-build/all: _deps/googletest-build/googlemock/all
-.PHONY : _deps/googletest-build/all
-
-# Recursive "preinstall" directory target.
-_deps/googletest-build/preinstall: _deps/googletest-build/googlemock/preinstall
-.PHONY : _deps/googletest-build/preinstall
-
-# Recursive "clean" directory target.
-_deps/googletest-build/clean: _deps/googletest-build/googlemock/clean
-.PHONY : _deps/googletest-build/clean
-
-#=============================================================================
-# Directory level rules for directory _deps/googletest-build/googlemock
-
-# Recursive "all" directory target.
-_deps/googletest-build/googlemock/all: _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
-_deps/googletest-build/googlemock/all: _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
-_deps/googletest-build/googlemock/all: _deps/googletest-build/googletest/all
-.PHONY : _deps/googletest-build/googlemock/all
-
-# Recursive "preinstall" directory target.
-_deps/googletest-build/googlemock/preinstall: _deps/googletest-build/googletest/preinstall
-.PHONY : _deps/googletest-build/googlemock/preinstall
-
-# Recursive "clean" directory target.
-_deps/googletest-build/googlemock/clean: _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/clean
-_deps/googletest-build/googlemock/clean: _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/clean
-_deps/googletest-build/googlemock/clean: _deps/googletest-build/googletest/clean
-.PHONY : _deps/googletest-build/googlemock/clean
-
-#=============================================================================
-# Directory level rules for directory _deps/googletest-build/googletest
-
-# Recursive "all" directory target.
-_deps/googletest-build/googletest/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-_deps/googletest-build/googletest/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
-.PHONY : _deps/googletest-build/googletest/all
-
-# Recursive "preinstall" directory target.
-_deps/googletest-build/googletest/preinstall:
-.PHONY : _deps/googletest-build/googletest/preinstall
-
-# Recursive "clean" directory target.
-_deps/googletest-build/googletest/clean: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/clean
-_deps/googletest-build/googletest/clean: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/clean
-.PHONY : _deps/googletest-build/googletest/clean
 
 #=============================================================================
 # Directory level rules for directory event
@@ -250,118 +196,13 @@ test/clean: test/CMakeFiles/EventPoolTest.dir/clean
 .PHONY : test/clean
 
 #=============================================================================
-# Target rules for target _deps/googletest-build/googlemock/CMakeFiles/gmock.dir
-
-# All Build rule for target.
-_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/depend
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=11,12 "Built target gmock"
-.PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
-
-# Build rule for subdir invocation for target.
-_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles 0
-.PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/rule
-
-# Convenience name for target.
-gmock: _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/rule
-.PHONY : gmock
-
-# clean rule for target.
-_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/clean:
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/clean
-.PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/clean
-
-#=============================================================================
-# Target rules for target _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir
-
-# All Build rule for target.
-_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
-_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/depend
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=13,14 "Built target gmock_main"
-.PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
-
-# Build rule for subdir invocation for target.
-_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles 0
-.PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/rule
-
-# Convenience name for target.
-gmock_main: _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/rule
-.PHONY : gmock_main
-
-# clean rule for target.
-_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/clean:
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/clean
-.PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/clean
-
-#=============================================================================
-# Target rules for target _deps/googletest-build/googletest/CMakeFiles/gtest.dir
-
-# All Build rule for target.
-_deps/googletest-build/googletest/CMakeFiles/gtest.dir/all:
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/depend
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=19,20 "Built target gtest"
-.PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-
-# Build rule for subdir invocation for target.
-_deps/googletest-build/googletest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles 0
-.PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest.dir/rule
-
-# Convenience name for target.
-gtest: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/rule
-.PHONY : gtest
-
-# clean rule for target.
-_deps/googletest-build/googletest/CMakeFiles/gtest.dir/clean:
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/clean
-.PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest.dir/clean
-
-#=============================================================================
-# Target rules for target _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir
-
-# All Build rule for target.
-_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/depend
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=21,22 "Built target gtest_main"
-.PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
-
-# Build rule for subdir invocation for target.
-_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles 0
-.PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/rule
-
-# Convenience name for target.
-gtest_main: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/rule
-.PHONY : gtest_main
-
-# clean rule for target.
-_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/clean:
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/clean
-.PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/clean
-
-#=============================================================================
 # Target rules for target memory/CMakeFiles/mat_mul.dir
 
 # All Build rule for target.
 memory/CMakeFiles/mat_mul.dir/all:
 	$(MAKE) $(MAKESILENT) -f memory/CMakeFiles/mat_mul.dir/build.make memory/CMakeFiles/mat_mul.dir/depend
 	$(MAKE) $(MAKESILENT) -f memory/CMakeFiles/mat_mul.dir/build.make memory/CMakeFiles/mat_mul.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=23,24 "Built target mat_mul"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=15,16 "Built target mat_mul"
 .PHONY : memory/CMakeFiles/mat_mul.dir/all
 
 # Build rule for subdir invocation for target.
@@ -387,7 +228,7 @@ memory/CMakeFiles/mat_mul.dir/clean:
 memory/CMakeFiles/vm_tensor.dir/all:
 	$(MAKE) $(MAKESILENT) -f memory/CMakeFiles/vm_tensor.dir/build.make memory/CMakeFiles/vm_tensor.dir/depend
 	$(MAKE) $(MAKESILENT) -f memory/CMakeFiles/vm_tensor.dir/build.make memory/CMakeFiles/vm_tensor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=31,32 "Built target vm_tensor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=23,24 "Built target vm_tensor"
 .PHONY : memory/CMakeFiles/vm_tensor.dir/all
 
 # Build rule for subdir invocation for target.
@@ -439,7 +280,7 @@ memory/CMakeFiles/cudaMalloc_api.dir/clean:
 memory/CMakeFiles/vmm_api.dir/all:
 	$(MAKE) $(MAKESILENT) -f memory/CMakeFiles/vmm_api.dir/build.make memory/CMakeFiles/vmm_api.dir/depend
 	$(MAKE) $(MAKESILENT) -f memory/CMakeFiles/vmm_api.dir/build.make memory/CMakeFiles/vmm_api.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=33,34 "Built target vmm_api"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=25,26 "Built target vmm_api"
 .PHONY : memory/CMakeFiles/vmm_api.dir/all
 
 # Build rule for subdir invocation for target.
@@ -465,7 +306,7 @@ memory/CMakeFiles/vmm_api.dir/clean:
 memory/CMakeFiles/mem_info_api.dir/all:
 	$(MAKE) $(MAKESILENT) -f memory/CMakeFiles/mem_info_api.dir/build.make memory/CMakeFiles/mem_info_api.dir/depend
 	$(MAKE) $(MAKESILENT) -f memory/CMakeFiles/mem_info_api.dir/build.make memory/CMakeFiles/mem_info_api.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=25,26 "Built target mem_info_api"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=17,18 "Built target mem_info_api"
 .PHONY : memory/CMakeFiles/mem_info_api.dir/all
 
 # Build rule for subdir invocation for target.
@@ -569,7 +410,7 @@ event/CMakeFiles/EventForSyn.dir/clean:
 stream/CMakeFiles/stream_intro.dir/all: event/CMakeFiles/EventPool.dir/all
 	$(MAKE) $(MAKESILENT) -f stream/CMakeFiles/stream_intro.dir/build.make stream/CMakeFiles/stream_intro.dir/depend
 	$(MAKE) $(MAKESILENT) -f stream/CMakeFiles/stream_intro.dir/build.make stream/CMakeFiles/stream_intro.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=29,30 "Built target stream_intro"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=21,22 "Built target stream_intro"
 .PHONY : stream/CMakeFiles/stream_intro.dir/all
 
 # Build rule for subdir invocation for target.
@@ -595,7 +436,7 @@ stream/CMakeFiles/stream_intro.dir/clean:
 stream/CMakeFiles/priority.dir/all: event/CMakeFiles/EventPool.dir/all
 	$(MAKE) $(MAKESILENT) -f stream/CMakeFiles/priority.dir/build.make stream/CMakeFiles/priority.dir/depend
 	$(MAKE) $(MAKESILENT) -f stream/CMakeFiles/priority.dir/build.make stream/CMakeFiles/priority.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=27,28 "Built target priority"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=19,20 "Built target priority"
 .PHONY : stream/CMakeFiles/priority.dir/all
 
 # Build rule for subdir invocation for target.
@@ -621,7 +462,7 @@ stream/CMakeFiles/priority.dir/clean:
 graph/CMakeFiles/graph.dir/all: event/CMakeFiles/EventPool.dir/all
 	$(MAKE) $(MAKESILENT) -f graph/CMakeFiles/graph.dir/build.make graph/CMakeFiles/graph.dir/depend
 	$(MAKE) $(MAKESILENT) -f graph/CMakeFiles/graph.dir/build.make graph/CMakeFiles/graph.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=15,16 "Built target graph"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=11,12 "Built target graph"
 .PHONY : graph/CMakeFiles/graph.dir/all
 
 # Build rule for subdir invocation for target.
@@ -647,7 +488,7 @@ graph/CMakeFiles/graph.dir/clean:
 graph/CMakeFiles/graph_mode_global.dir/all: event/CMakeFiles/EventPool.dir/all
 	$(MAKE) $(MAKESILENT) -f graph/CMakeFiles/graph_mode_global.dir/build.make graph/CMakeFiles/graph_mode_global.dir/depend
 	$(MAKE) $(MAKESILENT) -f graph/CMakeFiles/graph_mode_global.dir/build.make graph/CMakeFiles/graph_mode_global.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=17,18 "Built target graph_mode_global"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=13,14 "Built target graph_mode_global"
 .PHONY : graph/CMakeFiles/graph_mode_global.dir/all
 
 # Build rule for subdir invocation for target.
@@ -670,8 +511,6 @@ graph/CMakeFiles/graph_mode_global.dir/clean:
 # Target rules for target test/CMakeFiles/EventPoolTest.dir
 
 # All Build rule for target.
-test/CMakeFiles/EventPoolTest.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-test/CMakeFiles/EventPoolTest.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 test/CMakeFiles/EventPoolTest.dir/all: event/CMakeFiles/EventPool.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/EventPoolTest.dir/build.make test/CMakeFiles/EventPoolTest.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/EventPoolTest.dir/build.make test/CMakeFiles/EventPoolTest.dir/build
@@ -680,7 +519,7 @@ test/CMakeFiles/EventPoolTest.dir/all: event/CMakeFiles/EventPool.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/EventPoolTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/EventPoolTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/EventPoolTest.dir/rule
