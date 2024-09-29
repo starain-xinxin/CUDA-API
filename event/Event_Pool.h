@@ -1,3 +1,26 @@
+/* CUDA 事件池的基本实现
+- 事件池架构
+    ```text
+    - Event_pool
+        |-- SingleDevicePool(devide:0)      // 每个设备拥有独自的池
+        |-- SingleDevicePool(devide:1) 
+                ...
+        |-- SingleDevicePool(devide:6) 
+        |-- SingleDevicePool(devide:7) 
+                    ｜
+                    |--- PoolWithFlag(flag:0)           // 四种事件类型分别拥有独自的池
+                    |--- PoolWithFlag(flag:1)  
+                    |--- PoolWithFlag(flag:2)  
+                    |--- PoolWithFlag(flag:3)  
+    ```
+- 事件在池内：通过普通的unique_ptr管理。
+- 事件在池外：通过Event_ptr智能指针管理，这是一个自定义析构函数的独占式智能指针
+- 单例模式：lazy初始化，通过局部静态变量实现，C++11保证线程安全
+
+维护：
+- 事件池的类型：需要修改NUM_EVENT_CLASS
+ */
+
 #pragma once
 #include <cuda_runtime.h>
 #include <vector>
@@ -21,7 +44,8 @@ int device_count(){
 
 class EventPool{
     public:
-        using Event_ptr = std::unique_ptr<cudaEvent_t, std::function<void(cudaEvent_t*)>>; // 自动回收到事件池的cuda事件智能指针
+        // 自动回收到事件池的cuda事件智能指针
+        using Event_ptr = std::unique_ptr<cudaEvent_t, std::function<void(cudaEvent_t*)>>; 
         
         EventPool(): pools(device_count()){}
         ~EventPool() = default;

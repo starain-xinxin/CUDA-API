@@ -49,7 +49,7 @@ if(CMAKE_CUDA_LIBRARY_ARCHITECTURE)
 endif()
 
 set(CMAKE_CUDA_COMPILER_TOOLKIT_ROOT "/usr/local/cuda-12.2")
-set(CMAKE_CUDA_COMPILER_TOOLKIT_LIBRARY_ROOT "/usr/lib/nvidia-cuda-toolkit")
+set(CMAKE_CUDA_COMPILER_TOOLKIT_LIBRARY_ROOT "/usr/local/cuda-12.2")
 set(CMAKE_CUDA_COMPILER_LIBRARY_ROOT "/usr/local/cuda-12.2")
 
 set(CMAKE_CUDA_TOOLKIT_INCLUDE_DIRECTORIES "/usr/local/cuda-12.2/targets/x86_64-linux/include")

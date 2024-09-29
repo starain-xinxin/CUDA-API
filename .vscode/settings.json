@@ -63,6 +63,10 @@
         "typeinfo": "cpp",
         "semaphore": "cpp",
         "set": "cpp",
-        "__nullptr": "cpp"
+        "__nullptr": "cpp",
+        "any": "cpp",
+        "span": "cpp",
+        "variant": "cpp",
+        "map": "cpp"
     }
 }
