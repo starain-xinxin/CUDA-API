@@ -114,6 +114,7 @@ event/clean: event/CMakeFiles/EventForSyn.dir/clean
 # Recursive "all" directory target.
 graph/all: graph/CMakeFiles/graph.dir/all
 graph/all: graph/CMakeFiles/graph_mode_global.dir/all
+graph/all: graph/CMakeFiles/graph_mode_relax.dir/all
 .PHONY : graph/all
 
 # Recursive "preinstall" directory target.
@@ -123,6 +124,7 @@ graph/preinstall:
 # Recursive "clean" directory target.
 graph/clean: graph/CMakeFiles/graph.dir/clean
 graph/clean: graph/CMakeFiles/graph_mode_global.dir/clean
+graph/clean: graph/CMakeFiles/graph_mode_relax.dir/clean
 .PHONY : graph/clean
 
 #=============================================================================
@@ -202,7 +204,7 @@ test/clean: test/CMakeFiles/EventPoolTest.dir/clean
 memory/CMakeFiles/mat_mul.dir/all:
 	$(MAKE) $(MAKESILENT) -f memory/CMakeFiles/mat_mul.dir/build.make memory/CMakeFiles/mat_mul.dir/depend
 	$(MAKE) $(MAKESILENT) -f memory/CMakeFiles/mat_mul.dir/build.make memory/CMakeFiles/mat_mul.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=15,16 "Built target mat_mul"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=17,18 "Built target mat_mul"
 .PHONY : memory/CMakeFiles/mat_mul.dir/all
 
 # Build rule for subdir invocation for target.
@@ -228,7 +230,7 @@ memory/CMakeFiles/mat_mul.dir/clean:
 memory/CMakeFiles/vm_tensor.dir/all:
 	$(MAKE) $(MAKESILENT) -f memory/CMakeFiles/vm_tensor.dir/build.make memory/CMakeFiles/vm_tensor.dir/depend
 	$(MAKE) $(MAKESILENT) -f memory/CMakeFiles/vm_tensor.dir/build.make memory/CMakeFiles/vm_tensor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=23,24 "Built target vm_tensor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=25,26 "Built target vm_tensor"
 .PHONY : memory/CMakeFiles/vm_tensor.dir/all
 
 # Build rule for subdir invocation for target.
@@ -280,7 +282,7 @@ memory/CMakeFiles/cudaMalloc_api.dir/clean:
 memory/CMakeFiles/vmm_api.dir/all:
 	$(MAKE) $(MAKESILENT) -f memory/CMakeFiles/vmm_api.dir/build.make memory/CMakeFiles/vmm_api.dir/depend
 	$(MAKE) $(MAKESILENT) -f memory/CMakeFiles/vmm_api.dir/build.make memory/CMakeFiles/vmm_api.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=25,26 "Built target vmm_api"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=27,28 "Built target vmm_api"
 .PHONY : memory/CMakeFiles/vmm_api.dir/all
 
 # Build rule for subdir invocation for target.
@@ -306,7 +308,7 @@ memory/CMakeFiles/vmm_api.dir/clean:
 memory/CMakeFiles/mem_info_api.dir/all:
 	$(MAKE) $(MAKESILENT) -f memory/CMakeFiles/mem_info_api.dir/build.make memory/CMakeFiles/mem_info_api.dir/depend
 	$(MAKE) $(MAKESILENT) -f memory/CMakeFiles/mem_info_api.dir/build.make memory/CMakeFiles/mem_info_api.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=17,18 "Built target mem_info_api"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=19,20 "Built target mem_info_api"
 .PHONY : memory/CMakeFiles/mem_info_api.dir/all
 
 # Build rule for subdir invocation for target.
@@ -410,7 +412,7 @@ event/CMakeFiles/EventForSyn.dir/clean:
 stream/CMakeFiles/stream_intro.dir/all: event/CMakeFiles/EventPool.dir/all
 	$(MAKE) $(MAKESILENT) -f stream/CMakeFiles/stream_intro.dir/build.make stream/CMakeFiles/stream_intro.dir/depend
 	$(MAKE) $(MAKESILENT) -f stream/CMakeFiles/stream_intro.dir/build.make stream/CMakeFiles/stream_intro.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=21,22 "Built target stream_intro"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=23,24 "Built target stream_intro"
 .PHONY : stream/CMakeFiles/stream_intro.dir/all
 
 # Build rule for subdir invocation for target.
@@ -436,7 +438,7 @@ stream/CMakeFiles/stream_intro.dir/clean:
 stream/CMakeFiles/priority.dir/all: event/CMakeFiles/EventPool.dir/all
 	$(MAKE) $(MAKESILENT) -f stream/CMakeFiles/priority.dir/build.make stream/CMakeFiles/priority.dir/depend
 	$(MAKE) $(MAKESILENT) -f stream/CMakeFiles/priority.dir/build.make stream/CMakeFiles/priority.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=19,20 "Built target priority"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=21,22 "Built target priority"
 .PHONY : stream/CMakeFiles/priority.dir/all
 
 # Build rule for subdir invocation for target.
@@ -506,6 +508,32 @@ graph_mode_global: graph/CMakeFiles/graph_mode_global.dir/rule
 graph/CMakeFiles/graph_mode_global.dir/clean:
 	$(MAKE) $(MAKESILENT) -f graph/CMakeFiles/graph_mode_global.dir/build.make graph/CMakeFiles/graph_mode_global.dir/clean
 .PHONY : graph/CMakeFiles/graph_mode_global.dir/clean
+
+#=============================================================================
+# Target rules for target graph/CMakeFiles/graph_mode_relax.dir
+
+# All Build rule for target.
+graph/CMakeFiles/graph_mode_relax.dir/all: event/CMakeFiles/EventPool.dir/all
+	$(MAKE) $(MAKESILENT) -f graph/CMakeFiles/graph_mode_relax.dir/build.make graph/CMakeFiles/graph_mode_relax.dir/depend
+	$(MAKE) $(MAKESILENT) -f graph/CMakeFiles/graph_mode_relax.dir/build.make graph/CMakeFiles/graph_mode_relax.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles --progress-num=15,16 "Built target graph_mode_relax"
+.PHONY : graph/CMakeFiles/graph_mode_relax.dir/all
+
+# Build rule for subdir invocation for target.
+graph/CMakeFiles/graph_mode_relax.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 graph/CMakeFiles/graph_mode_relax.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yuanxinyu/CUDA_project/CUDA_API/build/CMakeFiles 0
+.PHONY : graph/CMakeFiles/graph_mode_relax.dir/rule
+
+# Convenience name for target.
+graph_mode_relax: graph/CMakeFiles/graph_mode_relax.dir/rule
+.PHONY : graph_mode_relax
+
+# clean rule for target.
+graph/CMakeFiles/graph_mode_relax.dir/clean:
+	$(MAKE) $(MAKESILENT) -f graph/CMakeFiles/graph_mode_relax.dir/build.make graph/CMakeFiles/graph_mode_relax.dir/clean
+.PHONY : graph/CMakeFiles/graph_mode_relax.dir/clean
 
 #=============================================================================
 # Target rules for target test/CMakeFiles/EventPoolTest.dir

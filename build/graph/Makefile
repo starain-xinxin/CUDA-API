@@ -144,6 +144,20 @@ graph_mode_global/fast:
 	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f graph/CMakeFiles/graph_mode_global.dir/build.make graph/CMakeFiles/graph_mode_global.dir/build
 .PHONY : graph_mode_global/fast
 
+# Convenience name for target.
+graph/CMakeFiles/graph_mode_relax.dir/rule:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 graph/CMakeFiles/graph_mode_relax.dir/rule
+.PHONY : graph/CMakeFiles/graph_mode_relax.dir/rule
+
+# Convenience name for target.
+graph_mode_relax: graph/CMakeFiles/graph_mode_relax.dir/rule
+.PHONY : graph_mode_relax
+
+# fast build rule for target.
+graph_mode_relax/fast:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f graph/CMakeFiles/graph_mode_relax.dir/build.make graph/CMakeFiles/graph_mode_relax.dir/build
+.PHONY : graph_mode_relax/fast
+
 graph.o: graph.cu.o
 .PHONY : graph.o
 
@@ -192,6 +206,30 @@ graph_mode_global.cu.s:
 	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f graph/CMakeFiles/graph_mode_global.dir/build.make graph/CMakeFiles/graph_mode_global.dir/graph_mode_global.cu.s
 .PHONY : graph_mode_global.cu.s
 
+graph_mode_relax.o: graph_mode_relax.cu.o
+.PHONY : graph_mode_relax.o
+
+# target to build an object file
+graph_mode_relax.cu.o:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f graph/CMakeFiles/graph_mode_relax.dir/build.make graph/CMakeFiles/graph_mode_relax.dir/graph_mode_relax.cu.o
+.PHONY : graph_mode_relax.cu.o
+
+graph_mode_relax.i: graph_mode_relax.cu.i
+.PHONY : graph_mode_relax.i
+
+# target to preprocess a source file
+graph_mode_relax.cu.i:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f graph/CMakeFiles/graph_mode_relax.dir/build.make graph/CMakeFiles/graph_mode_relax.dir/graph_mode_relax.cu.i
+.PHONY : graph_mode_relax.cu.i
+
+graph_mode_relax.s: graph_mode_relax.cu.s
+.PHONY : graph_mode_relax.s
+
+# target to generate assembly for a file
+graph_mode_relax.cu.s:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f graph/CMakeFiles/graph_mode_relax.dir/build.make graph/CMakeFiles/graph_mode_relax.dir/graph_mode_relax.cu.s
+.PHONY : graph_mode_relax.cu.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -202,12 +240,16 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... graph"
 	@echo "... graph_mode_global"
+	@echo "... graph_mode_relax"
 	@echo "... graph.o"
 	@echo "... graph.i"
 	@echo "... graph.s"
 	@echo "... graph_mode_global.o"
 	@echo "... graph_mode_global.i"
 	@echo "... graph_mode_global.s"
+	@echo "... graph_mode_relax.o"
+	@echo "... graph_mode_relax.i"
+	@echo "... graph_mode_relax.s"
 .PHONY : help
 
 

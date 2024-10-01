@@ -160,5 +160,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "stream/CMakeFiles/priority.dir/DependInfo.cmake"
   "graph/CMakeFiles/graph.dir/DependInfo.cmake"
   "graph/CMakeFiles/graph_mode_global.dir/DependInfo.cmake"
+  "graph/CMakeFiles/graph_mode_relax.dir/DependInfo.cmake"
   "test/CMakeFiles/EventPoolTest.dir/DependInfo.cmake"
   )

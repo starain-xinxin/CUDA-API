@@ -273,6 +273,19 @@ graph_mode_global/fast:
 .PHONY : graph_mode_global/fast
 
 #=============================================================================
+# Target rules for targets named graph_mode_relax
+
+# Build rule for target.
+graph_mode_relax: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 graph_mode_relax
+.PHONY : graph_mode_relax
+
+# fast build rule for target.
+graph_mode_relax/fast:
+	$(MAKE) $(MAKESILENT) -f graph/CMakeFiles/graph_mode_relax.dir/build.make graph/CMakeFiles/graph_mode_relax.dir/build
+.PHONY : graph_mode_relax/fast
+
+#=============================================================================
 # Target rules for targets named EventPoolTest
 
 # Build rule for target.
@@ -300,6 +313,7 @@ help:
 	@echo "... cudaMalloc_api"
 	@echo "... graph"
 	@echo "... graph_mode_global"
+	@echo "... graph_mode_relax"
 	@echo "... mat_mul"
 	@echo "... mem_info_api"
 	@echo "... priority"

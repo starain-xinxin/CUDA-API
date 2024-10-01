@@ -183,7 +183,7 @@ test/CMakeFiles/EventPoolTest.dir/test_event_pool.cpp.o: \
  /usr/include/c++/11/bits/atomic_base.h \
  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
  /usr/include/c++/11/backward/auto_ptr.h /usr/include/c++/11/cassert \
- /usr/include/assert.h /usr/include/c++/11/atomic \
+ /usr/include/assert.h \
  /home/yuanxinyu/CUDA_project/CUDA_API/head_tool/error_handling.h \
  /usr/local/cuda-12.2/include/cuda.h /usr/include/c++/11/stdlib.h \
  /usr/include/execinfo.h /usr/include/c++/11/iostream \
@@ -245,7 +245,7 @@ test/CMakeFiles/EventPoolTest.dir/test_event_pool.cpp.o: \
  /usr/include/c++/11/condition_variable \
  /usr/local/include/gtest/gtest-death-test.h \
  /usr/local/include/gtest/internal/gtest-death-test-internal.h \
- /usr/local/include/gtest/gtest-matchers.h \
+ /usr/local/include/gtest/gtest-matchers.h /usr/include/c++/11/atomic \
  /usr/local/include/gtest/gtest-printers.h \
  /usr/local/include/gtest/internal/gtest-internal.h \
  /usr/include/x86_64-linux-gnu/sys/wait.h /usr/include/signal.h \

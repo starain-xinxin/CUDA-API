@@ -1,0 +1,72 @@
+[
+{
+  "directory": "/home/yuanxinyu/CUDA_project/CUDA_API/build/memory",
+  "command": "/usr/local/cuda-12.2/bin/nvcc -forward-unknown-to-host-compiler  -I/home/yuanxinyu/CUDA_project/CUDA_API/head_tool -I/home/yuanxinyu/CUDA_project/CUDA_API/memory -isystem=/usr/local/cuda-12.2/include  --generate-code=arch=compute_75,code=[compute_75,sm_75] -std=c++11 -x cu -c /home/yuanxinyu/CUDA_project/CUDA_API/memory/mat_mul.cu -o CMakeFiles/mat_mul.dir/mat_mul.cu.o",
+  "file": "/home/yuanxinyu/CUDA_project/CUDA_API/memory/mat_mul.cu"
+},
+{
+  "directory": "/home/yuanxinyu/CUDA_project/CUDA_API/build/memory",
+  "command": "/usr/local/cuda-12.2/bin/nvcc -forward-unknown-to-host-compiler  -I/home/yuanxinyu/CUDA_project/CUDA_API/head_tool -I/home/yuanxinyu/CUDA_project/CUDA_API/memory -isystem=/usr/local/cuda-12.2/include  --generate-code=arch=compute_75,code=[compute_75,sm_75] -std=c++11 -x cu -c /home/yuanxinyu/CUDA_project/CUDA_API/memory/vm_tensor.cu -o CMakeFiles/vm_tensor.dir/vm_tensor.cu.o",
+  "file": "/home/yuanxinyu/CUDA_project/CUDA_API/memory/vm_tensor.cu"
+},
+{
+  "directory": "/home/yuanxinyu/CUDA_project/CUDA_API/build/memory",
+  "command": "/usr/bin/c++  -I/home/yuanxinyu/CUDA_project/CUDA_API/head_tool -I/home/yuanxinyu/CUDA_project/CUDA_API/memory -isystem /usr/local/cuda-12.2/include -std=gnu++14 -o CMakeFiles/cudaMalloc_api.dir/cudaMalloc_api.cpp.o -c /home/yuanxinyu/CUDA_project/CUDA_API/memory/cudaMalloc_api.cpp",
+  "file": "/home/yuanxinyu/CUDA_project/CUDA_API/memory/cudaMalloc_api.cpp"
+},
+{
+  "directory": "/home/yuanxinyu/CUDA_project/CUDA_API/build/memory",
+  "command": "/usr/bin/c++  -I/home/yuanxinyu/CUDA_project/CUDA_API/head_tool -I/home/yuanxinyu/CUDA_project/CUDA_API/memory -isystem /usr/local/cuda-12.2/include -std=gnu++14 -o CMakeFiles/vmm_api.dir/vmm_api.cpp.o -c /home/yuanxinyu/CUDA_project/CUDA_API/memory/vmm_api.cpp",
+  "file": "/home/yuanxinyu/CUDA_project/CUDA_API/memory/vmm_api.cpp"
+},
+{
+  "directory": "/home/yuanxinyu/CUDA_project/CUDA_API/build/memory",
+  "command": "/usr/bin/c++  -I/home/yuanxinyu/CUDA_project/CUDA_API/head_tool -I/home/yuanxinyu/CUDA_project/CUDA_API/memory -isystem /usr/local/cuda-12.2/include -std=gnu++14 -o CMakeFiles/mem_info_api.dir/mem_info_api.cpp.o -c /home/yuanxinyu/CUDA_project/CUDA_API/memory/mem_info_api.cpp",
+  "file": "/home/yuanxinyu/CUDA_project/CUDA_API/memory/mem_info_api.cpp"
+},
+{
+  "directory": "/home/yuanxinyu/CUDA_project/CUDA_API/build/event",
+  "command": "/usr/bin/c++ -DEventPool_EXPORTS -I/home/yuanxinyu/CUDA_project/CUDA_API/event -I/usr/local/cuda-12.2/include -I/home/yuanxinyu/CUDA_project/CUDA_API/head_tool -I/home/yuanxinyu/CUDA_project/CUDA_API/memory -fPIC -std=gnu++14 -o CMakeFiles/EventPool.dir/Event_Pool.cpp.o -c /home/yuanxinyu/CUDA_project/CUDA_API/event/Event_Pool.cpp",
+  "file": "/home/yuanxinyu/CUDA_project/CUDA_API/event/Event_Pool.cpp"
+},
+{
+  "directory": "/home/yuanxinyu/CUDA_project/CUDA_API/build/event",
+  "command": "/usr/local/cuda-12.2/bin/nvcc -forward-unknown-to-host-compiler  -I/home/yuanxinyu/CUDA_project/CUDA_API/head_tool -I/home/yuanxinyu/CUDA_project/CUDA_API/memory -I/home/yuanxinyu/CUDA_project/CUDA_API/event -isystem=/usr/local/cuda-12.2/include  --generate-code=arch=compute_75,code=[compute_75,sm_75] -std=c++11 -x cu -c /home/yuanxinyu/CUDA_project/CUDA_API/event/EventForTime.cu -o CMakeFiles/EventForTime.dir/EventForTime.cu.o",
+  "file": "/home/yuanxinyu/CUDA_project/CUDA_API/event/EventForTime.cu"
+},
+{
+  "directory": "/home/yuanxinyu/CUDA_project/CUDA_API/build/event",
+  "command": "/usr/bin/c++  -I/home/yuanxinyu/CUDA_project/CUDA_API/head_tool -I/home/yuanxinyu/CUDA_project/CUDA_API/memory -I/home/yuanxinyu/CUDA_project/CUDA_API/event -isystem /usr/local/cuda-12.2/include -std=gnu++14 -o CMakeFiles/EventForSyn.dir/EventForSyn.cpp.o -c /home/yuanxinyu/CUDA_project/CUDA_API/event/EventForSyn.cpp",
+  "file": "/home/yuanxinyu/CUDA_project/CUDA_API/event/EventForSyn.cpp"
+},
+{
+  "directory": "/home/yuanxinyu/CUDA_project/CUDA_API/build/stream",
+  "command": "/usr/local/cuda-12.2/bin/nvcc -forward-unknown-to-host-compiler  -I/home/yuanxinyu/CUDA_project/CUDA_API/head_tool -I/home/yuanxinyu/CUDA_project/CUDA_API/memory -I/home/yuanxinyu/CUDA_project/CUDA_API/event -I/home/yuanxinyu/CUDA_project/CUDA_API/stream -isystem=/usr/local/cuda-12.2/include  --generate-code=arch=compute_75,code=[compute_75,sm_75] -std=c++11 -x cu -c /home/yuanxinyu/CUDA_project/CUDA_API/stream/stream_intro.cu -o CMakeFiles/stream_intro.dir/stream_intro.cu.o",
+  "file": "/home/yuanxinyu/CUDA_project/CUDA_API/stream/stream_intro.cu"
+},
+{
+  "directory": "/home/yuanxinyu/CUDA_project/CUDA_API/build/stream",
+  "command": "/usr/local/cuda-12.2/bin/nvcc -forward-unknown-to-host-compiler  -I/home/yuanxinyu/CUDA_project/CUDA_API/head_tool -I/home/yuanxinyu/CUDA_project/CUDA_API/memory -I/home/yuanxinyu/CUDA_project/CUDA_API/event -I/home/yuanxinyu/CUDA_project/CUDA_API/stream -isystem=/usr/local/cuda-12.2/include  --generate-code=arch=compute_75,code=[compute_75,sm_75] -std=c++11 -x cu -c /home/yuanxinyu/CUDA_project/CUDA_API/stream/priority.cu -o CMakeFiles/priority.dir/priority.cu.o",
+  "file": "/home/yuanxinyu/CUDA_project/CUDA_API/stream/priority.cu"
+},
+{
+  "directory": "/home/yuanxinyu/CUDA_project/CUDA_API/build/graph",
+  "command": "/usr/local/cuda-12.2/bin/nvcc -forward-unknown-to-host-compiler  -I/home/yuanxinyu/CUDA_project/CUDA_API/head_tool -I/home/yuanxinyu/CUDA_project/CUDA_API/memory -I/home/yuanxinyu/CUDA_project/CUDA_API/event -I/home/yuanxinyu/CUDA_project/CUDA_API/stream -I/home/yuanxinyu/CUDA_project/CUDA_API/graph -isystem=/usr/local/cuda-12.2/include  --generate-code=arch=compute_75,code=[compute_75,sm_75] -std=c++11 -x cu -c /home/yuanxinyu/CUDA_project/CUDA_API/graph/graph.cu -o CMakeFiles/graph.dir/graph.cu.o",
+  "file": "/home/yuanxinyu/CUDA_project/CUDA_API/graph/graph.cu"
+},
+{
+  "directory": "/home/yuanxinyu/CUDA_project/CUDA_API/build/graph",
+  "command": "/usr/local/cuda-12.2/bin/nvcc -forward-unknown-to-host-compiler  -I/home/yuanxinyu/CUDA_project/CUDA_API/head_tool -I/home/yuanxinyu/CUDA_project/CUDA_API/memory -I/home/yuanxinyu/CUDA_project/CUDA_API/event -I/home/yuanxinyu/CUDA_project/CUDA_API/stream -I/home/yuanxinyu/CUDA_project/CUDA_API/graph -isystem=/usr/local/cuda-12.2/include  --generate-code=arch=compute_75,code=[compute_75,sm_75] -std=c++11 -x cu -c /home/yuanxinyu/CUDA_project/CUDA_API/graph/graph_mode_global.cu -o CMakeFiles/graph_mode_global.dir/graph_mode_global.cu.o",
+  "file": "/home/yuanxinyu/CUDA_project/CUDA_API/graph/graph_mode_global.cu"
+},
+{
+  "directory": "/home/yuanxinyu/CUDA_project/CUDA_API/build/graph",
+  "command": "/usr/local/cuda-12.2/bin/nvcc -forward-unknown-to-host-compiler  -I/home/yuanxinyu/CUDA_project/CUDA_API/head_tool -I/home/yuanxinyu/CUDA_project/CUDA_API/memory -I/home/yuanxinyu/CUDA_project/CUDA_API/event -I/home/yuanxinyu/CUDA_project/CUDA_API/stream -I/home/yuanxinyu/CUDA_project/CUDA_API/graph -isystem=/usr/local/cuda-12.2/include  --generate-code=arch=compute_75,code=[compute_75,sm_75] -std=c++11 -x cu -c /home/yuanxinyu/CUDA_project/CUDA_API/graph/graph_mode_relax.cu -o CMakeFiles/graph_mode_relax.dir/graph_mode_relax.cu.o",
+  "file": "/home/yuanxinyu/CUDA_project/CUDA_API/graph/graph_mode_relax.cu"
+},
+{
+  "directory": "/home/yuanxinyu/CUDA_project/CUDA_API/build/test",
+  "command": "/usr/bin/c++  -I/home/yuanxinyu/CUDA_project/CUDA_API/head_tool -I/home/yuanxinyu/CUDA_project/CUDA_API/memory -I/home/yuanxinyu/CUDA_project/CUDA_API/event -I/home/yuanxinyu/CUDA_project/CUDA_API/stream -I/home/yuanxinyu/CUDA_project/CUDA_API/graph -I/home/yuanxinyu/CUDA_project/CUDA_API/test -isystem /usr/local/cuda-12.2/include -std=gnu++14 -o CMakeFiles/EventPoolTest.dir/test_event_pool.cpp.o -c /home/yuanxinyu/CUDA_project/CUDA_API/test/test_event_pool.cpp",
+  "file": "/home/yuanxinyu/CUDA_project/CUDA_API/test/test_event_pool.cpp"
+}
+]

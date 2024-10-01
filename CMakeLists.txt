@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.20)
 
 project(CUDA_API LANGUAGES CUDA CXX C)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # ------------------- Cpp标准设置 ------------------------#
 set(CMAKE_CXX_STANDARD 14)
