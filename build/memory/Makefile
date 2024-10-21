@@ -186,6 +186,82 @@ mem_info_api/fast:
 	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f memory/CMakeFiles/mem_info_api.dir/build.make memory/CMakeFiles/mem_info_api.dir/build
 .PHONY : mem_info_api/fast
 
+# Convenience name for target.
+memory/CMakeFiles/MemParallel.dir/rule:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 memory/CMakeFiles/MemParallel.dir/rule
+.PHONY : memory/CMakeFiles/MemParallel.dir/rule
+
+# Convenience name for target.
+MemParallel: memory/CMakeFiles/MemParallel.dir/rule
+.PHONY : MemParallel
+
+# fast build rule for target.
+MemParallel/fast:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f memory/CMakeFiles/MemParallel.dir/build.make memory/CMakeFiles/MemParallel.dir/build
+.PHONY : MemParallel/fast
+
+# Convenience name for target.
+memory/CMakeFiles/MemParallel2.dir/rule:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 memory/CMakeFiles/MemParallel2.dir/rule
+.PHONY : memory/CMakeFiles/MemParallel2.dir/rule
+
+# Convenience name for target.
+MemParallel2: memory/CMakeFiles/MemParallel2.dir/rule
+.PHONY : MemParallel2
+
+# fast build rule for target.
+MemParallel2/fast:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f memory/CMakeFiles/MemParallel2.dir/build.make memory/CMakeFiles/MemParallel2.dir/build
+.PHONY : MemParallel2/fast
+
+MemParallel.o: MemParallel.cu.o
+.PHONY : MemParallel.o
+
+# target to build an object file
+MemParallel.cu.o:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f memory/CMakeFiles/MemParallel.dir/build.make memory/CMakeFiles/MemParallel.dir/MemParallel.cu.o
+.PHONY : MemParallel.cu.o
+
+MemParallel.i: MemParallel.cu.i
+.PHONY : MemParallel.i
+
+# target to preprocess a source file
+MemParallel.cu.i:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f memory/CMakeFiles/MemParallel.dir/build.make memory/CMakeFiles/MemParallel.dir/MemParallel.cu.i
+.PHONY : MemParallel.cu.i
+
+MemParallel.s: MemParallel.cu.s
+.PHONY : MemParallel.s
+
+# target to generate assembly for a file
+MemParallel.cu.s:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f memory/CMakeFiles/MemParallel.dir/build.make memory/CMakeFiles/MemParallel.dir/MemParallel.cu.s
+.PHONY : MemParallel.cu.s
+
+MemParallel2.o: MemParallel2.cu.o
+.PHONY : MemParallel2.o
+
+# target to build an object file
+MemParallel2.cu.o:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f memory/CMakeFiles/MemParallel2.dir/build.make memory/CMakeFiles/MemParallel2.dir/MemParallel2.cu.o
+.PHONY : MemParallel2.cu.o
+
+MemParallel2.i: MemParallel2.cu.i
+.PHONY : MemParallel2.i
+
+# target to preprocess a source file
+MemParallel2.cu.i:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f memory/CMakeFiles/MemParallel2.dir/build.make memory/CMakeFiles/MemParallel2.dir/MemParallel2.cu.i
+.PHONY : MemParallel2.cu.i
+
+MemParallel2.s: MemParallel2.cu.s
+.PHONY : MemParallel2.s
+
+# target to generate assembly for a file
+MemParallel2.cu.s:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f memory/CMakeFiles/MemParallel2.dir/build.make memory/CMakeFiles/MemParallel2.dir/MemParallel2.cu.s
+.PHONY : MemParallel2.cu.s
+
 cudaMalloc_api.o: cudaMalloc_api.cpp.o
 .PHONY : cudaMalloc_api.o
 
@@ -314,11 +390,19 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... MemParallel"
+	@echo "... MemParallel2"
 	@echo "... cudaMalloc_api"
 	@echo "... mat_mul"
 	@echo "... mem_info_api"
 	@echo "... vm_tensor"
 	@echo "... vmm_api"
+	@echo "... MemParallel.o"
+	@echo "... MemParallel.i"
+	@echo "... MemParallel.s"
+	@echo "... MemParallel2.o"
+	@echo "... MemParallel2.i"
+	@echo "... MemParallel2.s"
 	@echo "... cudaMalloc_api.o"
 	@echo "... cudaMalloc_api.i"
 	@echo "... cudaMalloc_api.s"

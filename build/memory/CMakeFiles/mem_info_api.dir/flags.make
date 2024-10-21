@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/yuanxinyu/CUDA_project/CUDA_API/head_tool -I/home/yuanxinyu/CUDA_project/CUDA_API/memory -isystem /usr/local/cuda-12.2/include
 
-CXX_FLAGS = -std=gnu++14
+CXX_FLAGS = -g -std=gnu++14
 
