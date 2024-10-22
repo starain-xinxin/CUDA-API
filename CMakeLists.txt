@@ -27,7 +27,7 @@ endif()
 message(STATUS "nvcc 路径设置: ${CMAKE_CUDA_COMPILER}")
 set(CMAKE_CUDA_STANDARD 11)
 set(CMAKE_CUDA_STANDARD_REQUIRED ON)
-set(CMAKE_CUDA_ARCHITECTURES 75) # 75 是指 CUDA Compute Capability 7.5，适用于较新的 GPU
+set(CMAKE_CUDA_ARCHITECTURES 80) # 75 是指 CUDA Compute Capability 7.5，适用于较新的 GPU
 list(APPEND CUDA_API_LINK_LIST "CUDA::cudart")      # 运行时库
 list(APPEND CUDA_API_LINK_LIST "CUDA::cuda_driver") # 驱动库
 list(APPEND CUDA_API_INCLUDE_LIST "${CUDAToolkit_INCLUDE_DIRS}")   # CUDAToolkit头文件路径
@@ -47,9 +47,9 @@ list(APPEND CUDA_API_INCLUDE_LIST "${CUDAToolkit_INCLUDE_DIRS}")   # CUDAToolkit
 set(SUBDIR_LIST 
     head_tool
     memory
-    event
-    stream
-    graph
+    # event
+    # stream
+    # graph
 )
 foreach(subdir ${SUBDIR_LIST})         # 包含所有子目录
     list(APPEND CUDA_API_INCLUDE_LIST "${CMAKE_SOURCE_DIR}/${subdir}")   
@@ -58,7 +58,7 @@ endforeach()
 
 # ----------------- 管理需要使用链接库的子目录 ------------------ #
 set(SUBDIR_USELIB_LIST
-    test
+    # test
 )
 foreach(subdir_uselib ${SUBDIR_USELIB_LIST})
     add_subdirectory(${subdir_uselib})

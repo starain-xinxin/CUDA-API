@@ -182,121 +182,43 @@ mem_info_api/fast:
 .PHONY : mem_info_api/fast
 
 #=============================================================================
-# Target rules for targets named EventPool
+# Target rules for targets named MemParallel
 
 # Build rule for target.
-EventPool: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 EventPool
-.PHONY : EventPool
+MemParallel: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MemParallel
+.PHONY : MemParallel
 
 # fast build rule for target.
-EventPool/fast:
-	$(MAKE) $(MAKESILENT) -f event/CMakeFiles/EventPool.dir/build.make event/CMakeFiles/EventPool.dir/build
-.PHONY : EventPool/fast
+MemParallel/fast:
+	$(MAKE) $(MAKESILENT) -f memory/CMakeFiles/MemParallel.dir/build.make memory/CMakeFiles/MemParallel.dir/build
+.PHONY : MemParallel/fast
 
 #=============================================================================
-# Target rules for targets named EventForTime
+# Target rules for targets named MemParallel2
 
 # Build rule for target.
-EventForTime: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 EventForTime
-.PHONY : EventForTime
+MemParallel2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MemParallel2
+.PHONY : MemParallel2
 
 # fast build rule for target.
-EventForTime/fast:
-	$(MAKE) $(MAKESILENT) -f event/CMakeFiles/EventForTime.dir/build.make event/CMakeFiles/EventForTime.dir/build
-.PHONY : EventForTime/fast
+MemParallel2/fast:
+	$(MAKE) $(MAKESILENT) -f memory/CMakeFiles/MemParallel2.dir/build.make memory/CMakeFiles/MemParallel2.dir/build
+.PHONY : MemParallel2/fast
 
 #=============================================================================
-# Target rules for targets named EventForSyn
+# Target rules for targets named MemParallel3
 
 # Build rule for target.
-EventForSyn: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 EventForSyn
-.PHONY : EventForSyn
+MemParallel3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MemParallel3
+.PHONY : MemParallel3
 
 # fast build rule for target.
-EventForSyn/fast:
-	$(MAKE) $(MAKESILENT) -f event/CMakeFiles/EventForSyn.dir/build.make event/CMakeFiles/EventForSyn.dir/build
-.PHONY : EventForSyn/fast
-
-#=============================================================================
-# Target rules for targets named stream_intro
-
-# Build rule for target.
-stream_intro: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stream_intro
-.PHONY : stream_intro
-
-# fast build rule for target.
-stream_intro/fast:
-	$(MAKE) $(MAKESILENT) -f stream/CMakeFiles/stream_intro.dir/build.make stream/CMakeFiles/stream_intro.dir/build
-.PHONY : stream_intro/fast
-
-#=============================================================================
-# Target rules for targets named priority
-
-# Build rule for target.
-priority: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 priority
-.PHONY : priority
-
-# fast build rule for target.
-priority/fast:
-	$(MAKE) $(MAKESILENT) -f stream/CMakeFiles/priority.dir/build.make stream/CMakeFiles/priority.dir/build
-.PHONY : priority/fast
-
-#=============================================================================
-# Target rules for targets named graph
-
-# Build rule for target.
-graph: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 graph
-.PHONY : graph
-
-# fast build rule for target.
-graph/fast:
-	$(MAKE) $(MAKESILENT) -f graph/CMakeFiles/graph.dir/build.make graph/CMakeFiles/graph.dir/build
-.PHONY : graph/fast
-
-#=============================================================================
-# Target rules for targets named graph_mode_global
-
-# Build rule for target.
-graph_mode_global: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 graph_mode_global
-.PHONY : graph_mode_global
-
-# fast build rule for target.
-graph_mode_global/fast:
-	$(MAKE) $(MAKESILENT) -f graph/CMakeFiles/graph_mode_global.dir/build.make graph/CMakeFiles/graph_mode_global.dir/build
-.PHONY : graph_mode_global/fast
-
-#=============================================================================
-# Target rules for targets named graph_mode_relax
-
-# Build rule for target.
-graph_mode_relax: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 graph_mode_relax
-.PHONY : graph_mode_relax
-
-# fast build rule for target.
-graph_mode_relax/fast:
-	$(MAKE) $(MAKESILENT) -f graph/CMakeFiles/graph_mode_relax.dir/build.make graph/CMakeFiles/graph_mode_relax.dir/build
-.PHONY : graph_mode_relax/fast
-
-#=============================================================================
-# Target rules for targets named EventPoolTest
-
-# Build rule for target.
-EventPoolTest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 EventPoolTest
-.PHONY : EventPoolTest
-
-# fast build rule for target.
-EventPoolTest/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/EventPoolTest.dir/build.make test/CMakeFiles/EventPoolTest.dir/build
-.PHONY : EventPoolTest/fast
+MemParallel3/fast:
+	$(MAKE) $(MAKESILENT) -f memory/CMakeFiles/MemParallel3.dir/build.make memory/CMakeFiles/MemParallel3.dir/build
+.PHONY : MemParallel3/fast
 
 # Help Target
 help:
@@ -306,18 +228,12 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... EventForSyn"
-	@echo "... EventForTime"
-	@echo "... EventPool"
-	@echo "... EventPoolTest"
+	@echo "... MemParallel"
+	@echo "... MemParallel2"
+	@echo "... MemParallel3"
 	@echo "... cudaMalloc_api"
-	@echo "... graph"
-	@echo "... graph_mode_global"
-	@echo "... graph_mode_relax"
 	@echo "... mat_mul"
 	@echo "... mem_info_api"
-	@echo "... priority"
-	@echo "... stream_intro"
 	@echo "... vm_tensor"
 	@echo "... vmm_api"
 .PHONY : help

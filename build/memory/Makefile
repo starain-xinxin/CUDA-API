@@ -214,6 +214,20 @@ MemParallel2/fast:
 	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f memory/CMakeFiles/MemParallel2.dir/build.make memory/CMakeFiles/MemParallel2.dir/build
 .PHONY : MemParallel2/fast
 
+# Convenience name for target.
+memory/CMakeFiles/MemParallel3.dir/rule:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 memory/CMakeFiles/MemParallel3.dir/rule
+.PHONY : memory/CMakeFiles/MemParallel3.dir/rule
+
+# Convenience name for target.
+MemParallel3: memory/CMakeFiles/MemParallel3.dir/rule
+.PHONY : MemParallel3
+
+# fast build rule for target.
+MemParallel3/fast:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f memory/CMakeFiles/MemParallel3.dir/build.make memory/CMakeFiles/MemParallel3.dir/build
+.PHONY : MemParallel3/fast
+
 MemParallel.o: MemParallel.cu.o
 .PHONY : MemParallel.o
 
@@ -261,6 +275,30 @@ MemParallel2.s: MemParallel2.cu.s
 MemParallel2.cu.s:
 	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f memory/CMakeFiles/MemParallel2.dir/build.make memory/CMakeFiles/MemParallel2.dir/MemParallel2.cu.s
 .PHONY : MemParallel2.cu.s
+
+MemParallel3.o: MemParallel3.cu.o
+.PHONY : MemParallel3.o
+
+# target to build an object file
+MemParallel3.cu.o:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f memory/CMakeFiles/MemParallel3.dir/build.make memory/CMakeFiles/MemParallel3.dir/MemParallel3.cu.o
+.PHONY : MemParallel3.cu.o
+
+MemParallel3.i: MemParallel3.cu.i
+.PHONY : MemParallel3.i
+
+# target to preprocess a source file
+MemParallel3.cu.i:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f memory/CMakeFiles/MemParallel3.dir/build.make memory/CMakeFiles/MemParallel3.dir/MemParallel3.cu.i
+.PHONY : MemParallel3.cu.i
+
+MemParallel3.s: MemParallel3.cu.s
+.PHONY : MemParallel3.s
+
+# target to generate assembly for a file
+MemParallel3.cu.s:
+	cd /home/yuanxinyu/CUDA_project/CUDA_API/build && $(MAKE) $(MAKESILENT) -f memory/CMakeFiles/MemParallel3.dir/build.make memory/CMakeFiles/MemParallel3.dir/MemParallel3.cu.s
+.PHONY : MemParallel3.cu.s
 
 cudaMalloc_api.o: cudaMalloc_api.cpp.o
 .PHONY : cudaMalloc_api.o
@@ -392,6 +430,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... MemParallel"
 	@echo "... MemParallel2"
+	@echo "... MemParallel3"
 	@echo "... cudaMalloc_api"
 	@echo "... mat_mul"
 	@echo "... mem_info_api"
@@ -403,6 +442,9 @@ help:
 	@echo "... MemParallel2.o"
 	@echo "... MemParallel2.i"
 	@echo "... MemParallel2.s"
+	@echo "... MemParallel3.o"
+	@echo "... MemParallel3.i"
+	@echo "... MemParallel3.s"
 	@echo "... cudaMalloc_api.o"
 	@echo "... cudaMalloc_api.i"
 	@echo "... cudaMalloc_api.s"

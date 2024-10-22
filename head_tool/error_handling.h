@@ -1,5 +1,5 @@
 #pragma once
-#include <stdio.h>
+#include <cstdio>
 #include <cuda_runtime.h>
 #include <cuda.h>
 #include <execinfo.h>

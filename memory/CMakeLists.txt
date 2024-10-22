@@ -7,6 +7,9 @@ set(SOURCE_FILES
     cudaMalloc_api.cpp
     vmm_api.cpp
     mem_info_api.cpp
+    MemParallel.cu
+    MemParallel2.cu
+    MemParallel3.cu
 )
 # 对于所有cpp和cu文件，生成对应的目标文件
 foreach(SRC ${SOURCE_FILES})

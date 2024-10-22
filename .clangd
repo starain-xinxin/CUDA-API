@@ -1,6 +1,6 @@
 CompileFlags:
   Add: 
-    - "-std=c++20"
+    - "-std=c++17"
     - "-I/usr/include"
     - "-I/usr/local/cuda-12.2/include"
     - "-I/usr/local/include"
@@ -9,6 +9,16 @@ CompileFlags:
     - "-I/usr/include/c++/11/backward"
     - "-I/usr/lib/gcc/x86_64-linux-gnu/11/include"
     - "-I/usr/include/x86_64-linux-gnu"
+    - "--cuda-path=/usr/local/cuda-12.2"
+    - "--cuda-gpu-arch=sm_80"
     # 加入项目头文件路径
-    # - "-I/home/yuanxinyu/CUDA_project/CUDA_API/head_tool"
+    - "-I/home/yuanxinyu/CUDA_project/CUDA_API/head_tool"
+    
+  Remove:
+    - "-forward-unknown-to-host-compiler"
+    - "--generate-code=arch=compute_75,code=[compute_75,sm_75]"
+    - "--generate-code=arch=compute_80,code=[compute_80,sm_80]"
+
+
+
     

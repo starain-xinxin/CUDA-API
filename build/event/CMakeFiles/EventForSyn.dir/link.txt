@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/EventForSyn.dir/EventForSyn.cpp.o -o EventForSyn  -Wl,-rpath,/usr/local/cuda-12.2/lib64:/home/yuanxinyu/CUDA_project/CUDA_API/build/event /usr/local/cuda-12.2/lib64/libcudart.so /usr/lib/x86_64-linux-gnu/libcuda.so libEventPool.so 
