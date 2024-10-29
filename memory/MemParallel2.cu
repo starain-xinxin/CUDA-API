@@ -1,4 +1,4 @@
-#include <cstddef>
+// 这里证明kernel和vmm-api的并发是可行的
 #include <iostream>
 #include <cuda.h>
 #include <cuda_runtime.h>
@@ -16,7 +16,8 @@
 #include <string>
 #include <thread>
 
-#define NUM_KERNELS 30000000
+// #define NUM_KERNELS 30000000
+int NUM_KERNELS = 30000000;
 
 // 定义一个全局互斥锁以确保线程安全（如果您的应用程序是多线程的）
 std::mutex log_mutex;
@@ -202,9 +203,15 @@ void mem_parallel(){
 
 int main(){
     // setup
-    int N = 1024;
+    size_t N = 1024;
+    std::cout << "设置矩阵乘法的大小 N = ";
+    std::cin >> N;
+    std::cout << "设置核函数调用次数 NUM_KERNELS = ";
+    std::cin >> NUM_KERNELS;
+    std::cout << "kernel实验设置" << "矩阵乘法大小：" << N << "，核函数调用次数：" << NUM_KERNELS << std::endl;
     float *d_A, *d_B, *d_C;
     // 分配设备端内存
+    std::cout << "单矩阵显存占用：" << N * N * sizeof(float) / 1024 / 1024 << "MB" << "/ " << N * N * sizeof(float) / 1024 / 1024 / 1024 << "GB" << std::endl;
     RUNTIME_CHECK(cudaMalloc(&d_A, N * N * sizeof(float)));
     RUNTIME_CHECK(cudaMalloc(&d_B, N * N * sizeof(float)));
     RUNTIME_CHECK(cudaMalloc(&d_C, N * N * sizeof(float)));
@@ -240,6 +247,5 @@ int main(){
     std::cout << "Total time for " << NUM_KERNELS << " kernel calls: " << sigle_thread_time_for_100kernel_.count() << " ms" << std::endl;
     
     thread1.join();
-    
 
 }

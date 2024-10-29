@@ -1,4 +1,5 @@
 #pragma once
+#include <cstddef>
 #include <cuda_runtime.h>
 #include <iostream>
 #include <cstdint>
@@ -7,7 +8,7 @@
 #define BLOCK_SIZE 16  // CUDA 线程块的大小
 
 // CUDA 核函数，计算矩阵乘法 C = A * B
-__global__ void matrixMultiply(const float* A, const float* B, float* C, int N) {
+__global__ void matrixMultiply(const float* A, const float* B, float* C, size_t N) {
     int row = blockIdx.y * blockDim.y + threadIdx.y;  // 当前线程负责的行
     int col = blockIdx.x * blockDim.x + threadIdx.x;  // 当前线程负责的列
 

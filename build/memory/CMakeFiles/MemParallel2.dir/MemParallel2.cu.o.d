@@ -152,7 +152,6 @@ memory/CMakeFiles/MemParallel2.dir/MemParallel2.cu.o : /home/yuanxinyu/CUDA_proj
     /usr/include/c++/11/bits/move.h \
     /usr/include/c++/11/type_traits \
     /usr/include/c++/11/initializer_list \
-    /usr/include/c++/11/cstddef \
     /usr/include/c++/11/iostream \
     /usr/include/c++/11/ostream \
     /usr/include/c++/11/ios \
@@ -258,6 +257,7 @@ memory/CMakeFiles/MemParallel2.dir/MemParallel2.cu.o : /home/yuanxinyu/CUDA_proj
     /home/yuanxinyu/CUDA_project/CUDA_API/head_tool/error_handling.h \
     /usr/include/execinfo.h \
     /home/yuanxinyu/CUDA_project/CUDA_API/head_tool/KernelForTest.cuh \
+    /usr/include/c++/11/cstddef \
     /usr/include/c++/11/chrono \
     /usr/include/c++/11/ratio \
     /usr/include/c++/11/limits \
